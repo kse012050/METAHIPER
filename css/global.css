@@ -1,0 +1,42 @@
+/* 폰트 */
+@font-face {
+    font-family: 'SBAggroB';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 나눔고딕 */
+.topArea > div .leftArea h2 ,
+.topArea > div .leftArea ul li,
+.topArea > div form fieldset strong,
+.topArea > div form fieldset input,
+.productArea > ol > li,
+footer{font-family: 'Nanum Gothic', serif;}
+
+.topArea > div .leftArea .textBox p{font-family: 'SBAggroB';}
+
+.productArea > div{font-family: 'GmarketSansMedium';}
+
+/* 컨텐츠 크기 */
+.contentSize{max-width: 1460px; margin: 0 auto;}
+
+/* 포인트 색상 */
+mark.green{color: #56a54d;}
+mark.blue{color: #16205a;}
+
+/* 해더 */
+header{background-color: white; padding: 25px 0; text-align: center;}
+
+/* 푸터 */
+footer{background-color: #484848; padding: 160px 0;}
+footer > div{display: flex; align-items: center;}
+footer > div img{flex-shrink: 0; width: 210px; margin-right: 100px;}
+footer > div address p{font-size: 26px; font-weight: 800; color: #b2b2b2; line-height: 45px; }
