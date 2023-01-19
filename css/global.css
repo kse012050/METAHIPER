@@ -44,7 +44,7 @@ mark.blue{color: #16205a;}
 header{background-color: white; padding: 25px 0; text-align: center;}
 
 /* 푸터 */
-footer{background-color: #484848; padding: 160px 0;}
+footer{padding: 160px 0; background: url('../images/footer-bg.png') no-repeat center / cover;}
 footer > div{display: flex; align-items: center;}
 footer > div img{flex-shrink: 0; width: 210px; margin-right: 100px;}
-footer > div address p{font-size: 26px; font-weight: 800; color: #b2b2b2; line-height: 45px; }
+footer > div address p{font-size: 26px; font-weight: 800; color: #fff; line-height: 45px; }
