@@ -81,6 +81,5 @@ nav ul li a{display: block; font-size: 22px; font-weight: 800; color: #363636; l
 .productArea > ol > li.carbonArea{background: url('../images/carbonImg.png') no-repeat right top 40px / 46.78%;}
 .productArea > ol > li.carbonArea div{padding-bottom: 160px;}
 .productArea > ol > li.carbonArea div ul{line-height: 55px;}
-.productArea > ol > li.transactionArea div{}
-.productArea > ol > li.transactionArea div h3{}
-.productArea > ol > li.transactionArea div p{text-align: center; padding-top: 660px; background: url('../images/transactionImg.png') no-repeat center top 60px;}  
+.productArea > ol > li.transactionArea div p{text-align: center; padding-top: 660px; background: url('../images/transactionImg.png') no-repeat center top 60px / 70%;}  
+.productArea > ol > li.uproarArea div{padding-bottom: 430px; background: url('../images/uproarImg.png') no-repeat center bottom / 90%;}
