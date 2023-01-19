@@ -32,9 +32,9 @@ nav ul li{flex: 1; text-align: center;}
 nav ul li a{display: block; font-size: 22px; font-weight: 800; color: #363636; line-height: 70px;}
 
 /* 투자 상품 */
-.productArea > div{padding: 170px 0; background: url('../images/top-bg.png') no-repeat center / cover; text-align: center; color: white;}
-.productArea > div h2{font-size: 75px; font-weight: 700; margin-bottom: 60px;}
-.productArea > div p{font-size: 38px; font-weight: 500; line-height: 50px;}
+.productArea > .topBG{padding: 170px 0; background: url('../images/top-bg.png') no-repeat center / cover; text-align: center; color: white;}
+.productArea > .topBG h2{font-size: 75px; font-weight: 700; margin-bottom: 60px;}
+.productArea > .topBG p{font-size: 38px; font-weight: 500; line-height: 50px;}
 .productArea > ol{}
 .productArea > ol > li{padding: 140px 0; font-weight: 800; color: #2c2c2c; counter-increment: productList;}
 .productArea > ol > li:not(:last-child){border-bottom: 1px solid #434343;}
@@ -43,9 +43,9 @@ nav ul li a{display: block; font-size: 22px; font-weight: 800; color: #363636; l
 .productArea > ol > li mark.green{color: #0a4b09;}
 .productArea > ol > li h3{font-size: 51px; line-height: 68px;}
 .productArea > ol > li > div > :is(ul li , mark , p){font-size: 28px; line-height: 40px;}
-.productArea > ol > li > div span{display: inline-block; margin-bottom: 30px; position: relative;}
-.productArea > ol > li > div span::before{content: '0' counter(productList); font-size: 105px; font-weight: 700;}
-.productArea > ol > li > div span::after{content: ''; position: absolute; left: 0; bottom: 0; width: 100%; height: 45px; background-color: #f6ff00; z-index: -1;}
+.productArea > ol > li > div > span{display: inline-block; margin-bottom: 30px; position: relative;}
+.productArea > ol > li > div > span::before{content: '0' counter(productList); font-size: 105px; font-weight: 700;}
+.productArea > ol > li > div > span::after{content: ''; position: absolute; left: 0; bottom: 0; width: 100%; height: 45px; background-color: #f6ff00; z-index: -1;}
 .productArea > ol > li > div ul{margin-top: 20px;}
 /* .productArea > ol > li > div ul li{font-size: 28px; line-height: 40px;} */
 .productArea > ol > li > div ul + mark{display: block; /* font-size: 28px; line-height: 40px; */ margin-top: 35px;}
@@ -70,3 +70,8 @@ nav ul li a{display: block; font-size: 22px; font-weight: 800; color: #363636; l
 .productArea > ol > li.certificationArea > div div p mark{font-size: 183px; color: #bc5117; position: relative;}
 .productArea > ol > li.certificationArea > div div p mark::after{content: ''; position: absolute; left: 0; bottom: 30px; width: 100%; height: 55px; background-color: #f8f7ba; z-index: -1;}
 .productArea > ol > li.certificationArea > img{max-width: 50%;}
+.productArea > ol > li.contractArea > div h3{margin-bottom: 100px;}
+.productArea > ol > li.contractArea > div ul{display: flex; justify-content: space-between;}
+.productArea > ol > li.contractArea > div ul li{width: 28%;}
+.productArea > ol > li.contractArea > div ul li img{width: 100%; margin-bottom: 30px;}
+.productArea > ol > li.contractArea > div ul li span{display: block; font-size: 27px; text-align: center; line-height: 75px; border: 2px solid #a3a3a3; border-radius: 10em;}
