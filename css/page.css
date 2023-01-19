@@ -25,32 +25,36 @@
 .topArea > div form fieldset a:nth-of-type(2){background-color: #16205a; color: white;}
 .topArea > div form fieldset a:nth-of-type(3){background-color: #fae100; color: #3c1d1e;}
 
-nav{background-color: #f4f4f4; position: sticky; top: 0;}
+/* 메뉴 */
+nav{background-color: #f4f4f4; position: sticky; top: 0; z-index: 1000;}
 nav ul{display: flex;}
 nav ul li{flex: 1; text-align: center;}
 nav ul li a{display: block; font-size: 22px; font-weight: 800; color: #363636; line-height: 70px;}
 
-.productArea > div{padding: 170px 0; background: url('../images/product-bg.png') no-repeat center / cover; text-align: center; color: white;}
+/* 투자 상품 */
+.productArea > div{padding: 170px 0; background: url('../images/top-bg.png') no-repeat center / cover; text-align: center; color: white;}
 .productArea > div h2{font-size: 75px; font-weight: 700; margin-bottom: 60px;}
 .productArea > div p{font-size: 38px; font-weight: 500; line-height: 50px;}
 .productArea > ol{}
 .productArea > ol > li{padding: 140px 0; font-weight: 800; color: #2c2c2c; counter-increment: productList;}
 .productArea > ol > li:not(:last-child){border-bottom: 1px solid #434343;}
-.productArea > ol > li mark{color: #7a3415;}
+.productArea > ol > li mark.brown{color: #7a3415;}
+.productArea > ol > li mark.green{color: #0a4b09;}
 .productArea > ol > li h3{font-size: 51px; line-height: 68px; padding: 0 20px;}
-.productArea > ol > li span{display: inline-block; margin-bottom: 30px; position: relative;}
-.productArea > ol > li span::before{content: '0' counter(productList); display: block; font-size: 105px; font-weight: 700;}
-.productArea > ol > li span::after{content: ''; position: absolute; left: -5; bottom: 0; width: 100%; height: 45px; background-color: #f6ff00; z-index: -1;}
-.productArea > ol > li ul{padding: 0 40px; margin-top: 20px;}
-.productArea > ol > li ul li{font-size: 28px; line-height: 50px;}
-.productArea > ol > li ul + mark{display: block; padding: 0 40px; font-size: 28px; line-height: 50px; margin-top: 35px;}
-.productArea > ol > li :is(button , a) {margin: 0 60px; width: 400px; line-height: 85px; font-size: 30px; font-weight: 800; color: white; text-align: center; border-radius: 20px; background-color: #16205a; margin-top: 30px;}
+.productArea > ol > li > div span{display: inline-block; margin-bottom: 30px; position: relative;}
+.productArea > ol > li > div span::before{content: '0' counter(productList); display: block; font-size: 105px; font-weight: 700;}
+.productArea > ol > li > div span::after{content: ''; position: absolute; left: -5; bottom: 0; width: 100%; height: 45px; background-color: #f6ff00; z-index: -1;}
+.productArea > ol > li > div ul{padding: 0 40px; margin-top: 20px;}
+.productArea > ol > li > div ul li{font-size: 28px; line-height: 40px;}
+.productArea > ol > li > div ul + mark{display: block; padding: 0 40px; font-size: 28px; line-height: 40px; margin-top: 35px;}
+.productArea > ol > li > div :is(button , a) {margin: 0 60px; width: 400px; line-height: 85px; font-size: 30px; font-weight: 800; color: white; text-align: center; border-radius: 20px; background-color: #16205a; margin-top: 30px;}
+.productArea > ol > li > div ol{padding: 0 40px; margin-top: 70px;}
+.productArea > ol > li > div ol li{font-size: 35px; padding: 50px; border-radius: 10em; box-shadow: 5px 5px 20px -10px rgba(0, 0, 0, 0.5);}
+.productArea > ol > li > div ol li:not(:last-child){margin-bottom: 40px;}
+.productArea > ol > li.revenueArea div{padding-bottom: 500px; background: url('../images/revenueImg.png') no-repeat center bottom / 85%;}
 .productArea > ol > li.investArea{display: flex; align-items: center; gap: 50px;}
 .productArea > ol > li.investArea > *{flex: 1;}
 .productArea > ol > li.investArea img{max-width: 50%;}
-.productArea > ol > li ol{padding: 0 40px; margin-top: 70px;}
-.productArea > ol > li ol li{font-size: 35px; padding: 50px; border-radius: 10em; box-shadow: 5px 5px 20px -10px rgba(0, 0, 0, 0.5);}
-.productArea > ol > li ol li:not(:last-child){margin-bottom: 40px;}
-.productArea > ol > li.revenueArea img{width: 100%; border-radius: 200px 0 0 200px; box-shadow: 10px 5px 30px -10px rgba(0, 0, 0, 0.5);}
-.productArea > ol > li.revenueArea img:first-of-type{margin-top: 75px;}
-.productArea > ol > li.revenueArea img:not(:last-of-type){margin-bottom: 75px;}
+.productArea > ol > li.satisfactionArea img{width: 100%; border-radius: 200px 0 0 200px; box-shadow: 10px 5px 30px -10px rgba(0, 0, 0, 0.5);}
+.productArea > ol > li.satisfactionArea img:first-of-type{margin-top: 75px;}
+.productArea > ol > li.satisfactionArea img:not(:last-of-type){margin-bottom: 75px;}
