@@ -21,10 +21,13 @@
 .productArea > ol > li,
 footer{font-family: 'Nanum Gothic', serif;}
 
+/* SBAggroB */
 .topArea > div .leftArea .textBox p{font-family: 'SBAggroB';}
 
+/* GmarketSansMedium */
 .productArea > div,
-.productArea > ol > li.certificationArea > div div{font-family: 'GmarketSansMedium';}
+.productArea > ol > li.certificationArea > div div,
+.productArea .centerBG{font-family: 'GmarketSansMedium';}
 
 /* 컨텐츠 크기 */
 .contentSize{max-width: 1460px; margin: 0 auto;}

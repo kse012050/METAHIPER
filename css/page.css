@@ -75,3 +75,6 @@ nav ul li a{display: block; font-size: 22px; font-weight: 800; color: #363636; l
 .productArea > ol > li.contractArea > div ul li{width: 28%;}
 .productArea > ol > li.contractArea > div ul li img{width: 100%; margin-bottom: 30px;}
 .productArea > ol > li.contractArea > div ul li span{display: block; font-size: 27px; text-align: center; line-height: 75px; border: 2px solid #a3a3a3; border-radius: 10em;}
+.productArea .centerBG{font-weight: 700; text-align: center; padding: 250px 0; background: url('../images/center-bg.png') no-repeat center / cover;}
+.productArea .centerBG mark{display: block; font-size: 120px; color: #ffed55; margin-bottom: 30px;}
+.productArea .centerBG p{font-size: 27px; color: white; line-height: 47px; max-width: 600px; margin: 0 auto;}
