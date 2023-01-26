@@ -3,9 +3,7 @@
 .topArea > div{display: flex; justify-content: space-between; align-items: center;}
 .topArea > div .leftArea{max-width: 690px;}
 .topArea > div .leftArea h2{display: inline-block; font-size: 26px; font-weight: 700; color: white; line-height: 55px; padding: 0 50px; background-color: #16205a; border-radius: 10em;}
-/* .topArea > div .leftArea .textBox{padding: 25px 0;}
-.topArea > div .leftArea .textBox p{font-family: 'SBAggroB'; font-size: 60px; font-weight: 900; line-height: 85px; color: #3e3e3e;} */
-.topArea > div .leftArea .topSwiper{/* height: 240px; */ padding: 25px 0;}
+.topArea > div .leftArea .topSwiper{ padding: 25px 0;}
 .topArea > div .leftArea .topSwiper .swiper-slide{font-family: 'SBAggroB'; font-size: 60px; font-weight: 900; line-height: 85px; color: #3e3e3e;}
 .topArea > div .leftArea ul{display: flex; gap: 10px;}
 .topArea > div .leftArea ul li{width: 225px; padding-top: 160px; background-repeat: no-repeat; background-position: center top; background-size: 225px; box-shadow: 5px 5px 20px -10px rgba(0, 0, 0, 0.5);}
@@ -13,7 +11,6 @@
 .topArea > div .leftArea ul li:nth-child(2){background-image: url('../images/top-icon02.png');}
 .topArea > div .leftArea ul li:nth-child(3){background-image: url('../images/top-icon03.png');}
 .topArea > div .leftArea ul li span{display: block; font-size: 25px; font-weight: 700; color: white; line-height: 60px; text-align: center; background-color: #0a4b09;}
-.topArea > div form{}
 .topArea > div form fieldset{width: 510px; padding: 45px 25px 25px; box-sizing: border-box; background-color: white; box-shadow: 5px 5px 20px -10px rgba(0, 0, 0, 0.5);}
 .topArea > div form fieldset strong{display: block; font-size: 31px; font-weight: 800; color: #3e3e3e; text-align: center; margin-bottom: 30px;}
 .topArea > div form fieldset strong span{display: block; font-size: 42px; margin-top: 10px;}
@@ -38,7 +35,6 @@ nav ul li.active a{background-color: white; border-top: 1px solid #0a4b09;}
 .productArea > .topBG{padding: 170px 0; background: url('../images/top-bg.png') no-repeat center / cover; text-align: center; color: white;}
 .productArea > .topBG h2{font-size: 75px; font-weight: 700; margin-bottom: 60px;}
 .productArea > .topBG p{font-size: 38px; font-weight: 500; line-height: 50px;}
-.productArea > ol{}
 .productArea > ol > li{padding: 140px 0; font-weight: 800; color: #2c2c2c; counter-increment: productList;}
 .productArea > ol > li:not(:last-child){border-bottom: 1px solid #434343;}
 .productArea > ol > li mark.brown{color: #7a3415;}
@@ -50,16 +46,12 @@ nav ul li.active a{background-color: white; border-top: 1px solid #0a4b09;}
 .productArea > ol > li > div > span::before{content: '0' counter(productList); font-size: 105px; font-weight: 700;}
 .productArea > ol > li > div > span::after{content: ''; position: absolute; left: 0; bottom: 0; width: 100%; height: 45px; background-color: #f6ff00; z-index: -1;}
 .productArea > ol > li > div ul{margin-top: 20px;}
-/* .productArea > ol > li > div ul li{font-size: 28px; line-height: 40px;} */
-.productArea > ol > li > div ul + mark{display: block; /* font-size: 28px; line-height: 40px; */ margin-top: 35px;}
+.productArea > ol > li > div ul + mark{display: block; margin-top: 35px;}
 .productArea > ol > li > div :is(button , a) {margin: 0 60px; width: 400px; line-height: 85px; font-size: 30px; font-weight: 800; color: white; text-align: center; border-radius: 20px; background-color: #16205a; margin-top: 30px;}
 .productArea > ol > li > div ol{margin-top: 70px;}
 .productArea > ol > li > div ol li{font-size: 35px; padding: 50px; border-radius: 10em; box-shadow: 5px 5px 20px -10px rgba(0, 0, 0, 0.5);}
 .productArea > ol > li > div ol li:not(:last-child){margin-bottom: 40px;}
 .productArea > ol > li.revenueArea div{padding-bottom: 500px; background: url('../images/revenueImg.png') no-repeat center bottom / 85%;}
-/* .productArea > ol > li.investArea{display: flex; align-items: center; gap: 50px;}
-.productArea > ol > li.investArea > *{flex: 1;}
-.productArea > ol > li.investArea img{max-width: 50%;} */
 .productArea > ol > li.investArea > div{padding: 65px 50% 65px 0; box-sizing: border-box; background: url('../images/investImg.png') no-repeat right center / 50%;}
 .productArea > ol > li.investArea > div .popupArea > div{padding: 55px 20px 20px;  text-align: center;}
 .productArea > ol > li.investArea > div .popupArea > div fieldset legend{display: block; font-size: 35px; font-weight: 800; color: #05354d; margin-bottom: 20px;}
@@ -112,4 +104,3 @@ nav ul li.active a{background-color: white; border-top: 1px solid #0a4b09;}
 .productArea > ol > li.locationArea div iframe{width: 100%;}
 .productArea > ol > li.locationArea div dl{padding: 50px 0; display: flex; font-size: 27px; font-weight: 700; border-bottom: 1px solid #bcbcbc;}
 .productArea > ol > li.locationArea div dl dt{padding: 0 50px; width: 265px;}
-.productArea > ol > li.locationArea div dl dd{}

@@ -1,115 +1,108 @@
-/* 최상단 컨텐츠 */
-.topArea{padding: 4.375rem 0; background-color: #edf7ff; border-bottom: 1px solid #c0bebe;}
-.topArea > div{display: flex; justify-content: space-between; align-items: center;}
-.topArea > div .leftArea{max-width: 43.125rem;}
-.topArea > div .leftArea h2{display: inline-block; font-size: 1.625rem; font-weight: 700; color: white; line-height: 3.438rem; padding: 0 3.125rem; background-color: #16205a; border-radius: 10rem;}
-/* .topArea > div .leftArea .textBox{padding: 1.563rem 0;}
-.topArea > div .leftArea .textBox p{font-family: 'SBAggroB'; font-size: 3.750rem; font-weight: 900; line-height: 5.313rem; color: #3e3e3e;} */
-.topArea > div .leftArea .topSwiper{/* height: 240px; */ padding: 1.563rem 0;}
-.topArea > div .leftArea .topSwiper .swiper-slide{font-family: 'SBAggroB'; font-size: 3.750rem; font-weight: 900; line-height: 5.313rem; color: #3e3e3e;}
-.topArea > div .leftArea ul{display: flex; gap: 0.625rem;}
-.topArea > div .leftArea ul li{width: 14.063rem; padding-top: 10.000rem; background-repeat: no-repeat; background-position: center top; background-size: 14.063rem; box-shadow: 0.313rem 0.313rem 1.250rem -0.625rem rgba(0, 0, 0, 0.5);}
-.topArea > div .leftArea ul li:nth-child(1){background-image: url('../images/top-icon01.png');}
-.topArea > div .leftArea ul li:nth-child(2){background-image: url('../images/top-icon02.png');}
-.topArea > div .leftArea ul li:nth-child(3){background-image: url('../images/top-icon03.png');}
-.topArea > div .leftArea ul li span{display: block; font-size: 1.563rem; font-weight: 700; color: white; line-height: 3.750rem; text-align: center; background-color: #0a4b09;}
-.topArea > div form{}
-.topArea > div form fieldset{width: 31.875rem; padding: 2.813rem 1.563rem 1.563rem; box-sizing: border-box; background-color: white; box-shadow: 0.313rem 0.313rem 1.250rem -0.625rem rgba(0, 0, 0, 0.5);}
-.topArea > div form fieldset strong{display: block; font-size: 1.938rem; font-weight: 800; color: #3e3e3e; text-align: center; margin-bottom: 1.875rem;}
-.topArea > div form fieldset strong span{display: block; font-size: 2.625rem; margin-top: 0.625rem;}
-.topArea > div form fieldset input{width: 100%; height: 3.438rem; border: 1px solid #e4e4e4; box-sizing: border-box; font-size: 1.250rem; font-weight: 700; padding: 0 1.563rem;}
-.topArea > div form fieldset input:not(:last-of-type){margin-bottom: 0.938rem;}
-.topArea > div form fieldset input:last-of-type{margin-bottom: 1.250rem;}
-.topArea > div form fieldset input::placeholder{color: #c4c4c4;}
-.topArea > div form fieldset a{display: block; font-size: 1.563rem; font-weight: 800; line-height: 4.063rem; text-align: center; border-radius: 1.250rem;}
-.topArea > div form fieldset a:not(:last-of-type){margin-bottom: 0.625rem;}
-.topArea > div form fieldset a:nth-of-type(1){color: #3e3e3e; border: 0.125rem solid #16205a;}
-.topArea > div form fieldset a:nth-of-type(2){background-color: #16205a; color: white;}
-.topArea > div form fieldset a:nth-of-type(3){background-color: #fae100; color: #3c1d1e;}
+@media screen and (min-width : 801px) {
+    /* 최상단 컨텐츠 */
+    .topArea{padding: 4.375rem 0; background-color: #edf7ff; border-bottom: 1px solid #c0bebe;}
+    .topArea > div{display: flex; justify-content: space-between; align-items: center;}
+    .topArea > div .leftArea{max-width: 43.125rem;}
+    .topArea > div .leftArea h2{display: inline-block; font-size: 1.625rem; font-weight: 700; color: white; line-height: 3.438rem; padding: 0 3.125rem; background-color: #16205a; border-radius: 10rem;}
+    .topArea > div .leftArea .topSwiper{ padding: 1.563rem 0;}
+    .topArea > div .leftArea .topSwiper .swiper-slide{font-family: 'SBAggroB'; font-size: 3.750rem; font-weight: 900; line-height: 5.313rem; color: #3e3e3e;}
+    .topArea > div .leftArea ul{display: flex; gap: 0.625rem;}
+    .topArea > div .leftArea ul li{width: 14.063rem; padding-top: 10.000rem; background-repeat: no-repeat; background-position: center top; background-size: 14.063rem; box-shadow: 0.313rem 0.313rem 1.250rem -0.625rem rgba(0, 0, 0, 0.5);}
+    .topArea > div .leftArea ul li:nth-child(1){background-image: url('../images/top-icon01.png');}
+    .topArea > div .leftArea ul li:nth-child(2){background-image: url('../images/top-icon02.png');}
+    .topArea > div .leftArea ul li:nth-child(3){background-image: url('../images/top-icon03.png');}
+    .topArea > div .leftArea ul li span{display: block; font-size: 1.563rem; font-weight: 700; color: white; line-height: 3.750rem; text-align: center; background-color: #0a4b09;}
+    .topArea > div form fieldset{width: 31.875rem; padding: 2.813rem 1.563rem 1.563rem; box-sizing: border-box; background-color: white; box-shadow: 0.313rem 0.313rem 1.250rem -0.625rem rgba(0, 0, 0, 0.5);}
+    .topArea > div form fieldset strong{display: block; font-size: 1.938rem; font-weight: 800; color: #3e3e3e; text-align: center; margin-bottom: 1.875rem;}
+    .topArea > div form fieldset strong span{display: block; font-size: 2.625rem; margin-top: 0.625rem;}
+    .topArea > div form fieldset input{width: 100%; height: 3.438rem; border: 1px solid #e4e4e4; box-sizing: border-box; font-size: 1.250rem; font-weight: 700; padding: 0 1.563rem;}
+    .topArea > div form fieldset input:not(:last-of-type){margin-bottom: 0.938rem;}
+    .topArea > div form fieldset input:last-of-type{margin-bottom: 1.250rem;}
+    .topArea > div form fieldset input::placeholder{color: #c4c4c4;}
+    .topArea > div form fieldset a{display: block; font-size: 1.563rem; font-weight: 800; line-height: 4.063rem; text-align: center; border-radius: 1.250rem;}
+    .topArea > div form fieldset a:not(:last-of-type){margin-bottom: 0.625rem;}
+    .topArea > div form fieldset a:nth-of-type(1){color: #3e3e3e; border: 0.125rem solid #16205a;}
+    .topArea > div form fieldset a:nth-of-type(2){background-color: #16205a; color: white;}
+    .topArea > div form fieldset a:nth-of-type(3){background-color: #fae100; color: #3c1d1e;}
 
-/* 메뉴 */
-nav{background-color: #f4f4f4; position: sticky; top: 0; z-index: 1000;}
-nav ul{display: flex;}
-nav ul li{flex: 1; text-align: center;}
-nav ul li a{display: block; font-size: 1.375rem; font-weight: 800; color: #363636; line-height: 4.375rem;}
-nav ul li.active a{background-color: white; border-top: 1px solid #0a4b09;}
+    /* 메뉴 */
+    nav{background-color: #f4f4f4; position: sticky; top: 0; z-index: 1000;}
+    nav ul{display: flex;}
+    nav ul li{flex: 1; text-align: center;}
+    nav ul li a{display: block; font-size: 1.375rem; font-weight: 800; color: #363636; line-height: 4.375rem;}
+    nav ul li.active a{background-color: white; border-top: 1px solid #0a4b09;}
 
-/* 투자 상품 */
-.productArea > .topBG{padding: 10.625rem 0; background: url('../images/top-bg.png') no-repeat center / cover; text-align: center; color: white;}
-.productArea > .topBG h2{font-size: 4.688rem; font-weight: 700; margin-bottom: 3.750rem;}
-.productArea > .topBG p{font-size: 2.375rem; font-weight: 500; line-height: 3.125rem;}
-.productArea > ol{}
-.productArea > ol > li{padding: 8.750rem 0; font-weight: 800; color: #2c2c2c; counter-increment: productList;}
-.productArea > ol > li:not(:last-child){border-bottom: 1px solid #434343;}
-.productArea > ol > li mark.brown{color: #7a3415;}
-.productArea > ol > li mark.brown2{color: #8b2d03;}
-.productArea > ol > li mark.green{color: #0a4b09;}
-.productArea > ol > li h3{font-size: 3.188rem; line-height: 4.250rem;}
-.productArea > ol > li > div > :is(ul , mark , p){font-size: 1.750rem; line-height: 2.500rem;}
-.productArea > ol > li > div > span{display: inline-block; margin-bottom: 1.875rem; position: relative;}
-.productArea > ol > li > div > span::before{content: '0' counter(productList); font-size: 6.563rem; font-weight: 700;}
-.productArea > ol > li > div > span::after{content: ''; position: absolute; left: 0; bottom: 0; width: 100%; height: 2.813rem; background-color: #f6ff00; z-index: -1;}
-.productArea > ol > li > div ul{margin-top: 1.250rem;}
-/* .productArea > ol > li > div ul li{font-size: 1.750rem; line-height: 2.500rem;} */
-.productArea > ol > li > div ul + mark{display: block; /* font-size: 1.750rem; line-height: 2.500rem; */ margin-top: 2.188rem;}
-.productArea > ol > li > div :is(button , a) {margin: 0 3.750rem; width: 25.000rem; line-height: 5.313rem; font-size: 1.875rem; font-weight: 800; color: white; text-align: center; border-radius: 1.250rem; background-color: #16205a; margin-top: 1.875rem;}
-.productArea > ol > li > div ol{margin-top: 4.375rem;}
-.productArea > ol > li > div ol li{font-size: 2.188rem; padding: 3.125rem; border-radius: 10rem; box-shadow: 0.313rem 0.313rem 1.250rem -0.625rem rgba(0, 0, 0, 0.5);}
-.productArea > ol > li > div ol li:not(:last-child){margin-bottom: 2.500rem;}
-.productArea > ol > li.revenueArea div{padding-bottom: 31.250rem; background: url('../images/revenueImg.png') no-repeat center bottom / 85%;}
-/* .productArea > ol > li.investArea{display: flex; align-items: center; gap: 3.125rem;}
-.productArea > ol > li.investArea > *{flex: 1;}
-.productArea > ol > li.investArea img{max-width: 50%;} */
-.productArea > ol > li.investArea > div{padding: 4.063rem 50% 4.063rem 0; box-sizing: border-box; background: url('../images/investImg.png') no-repeat right center / 50%;}
-.productArea > ol > li.investArea > div .popupArea > div{padding: 3.438rem 1.250rem 1.250rem;  text-align: center;}
-.productArea > ol > li.investArea > div .popupArea > div fieldset legend{display: block; font-size: 2.188rem; font-weight: 800; color: #05354d; margin-bottom: 1.250rem;}
-.productArea > ol > li.investArea > div .popupArea > div fieldset input[type="text"]{width: 21.250rem; height: 2.625rem; border: 1px solid #a7a7a7; border-radius: 0.625rem; text-align: center; box-sizing: border-box; margin-bottom: 0.938rem;}
-.productArea > ol > li.investArea > div .popupArea > div fieldset input[type="text"]::placeholder{color: #555555;}
-.productArea > ol > li.investArea > div .popupArea > div fieldset table{width: 21.250rem; margin: 0 auto 1.250rem;}
-.productArea > ol > li.investArea > div .popupArea > div fieldset table tr{font-size: 1.250rem; line-height: 3.438rem; font-weight: 700;}
-.productArea > ol > li.investArea > div .popupArea > div fieldset table tbody tr{color: #555555; border-bottom: 0.125rem solid #e6e6e6;}
-.productArea > ol > li.investArea > div .popupArea > div fieldset table tfoot tr{background-color: #fefbe5;}
-.productArea > ol > li.investArea > div .popupArea > div fieldset p{font-size: 0.813rem; color: #aa0000; font-weight: 400; margin-bottom: 0.625rem;}
-.productArea > ol > li.investArea > div .popupArea > div fieldset input[type="submit"]{width: 25.938rem; height: 3.750rem; font-size: 1.875rem; color: white; background-color: #008cd3; border-radius: 0.625rem; border: none;}
-.productArea > ol > li.satisfactionArea img{width: 100%; border-radius: 12.500rem 0 0 12.500rem; box-shadow: 0.625rem 0.313rem 1.875rem -0.625rem rgba(0, 0, 0, 0.5);}
-.productArea > ol > li.satisfactionArea img:first-of-type{margin-top: 4.688rem;}
-.productArea > ol > li.satisfactionArea img:not(:last-of-type){margin-bottom: 4.688rem;}
-.productArea > ol > li.certificationArea{display: flex; align-items: center; gap: 3.125rem;}
-.productArea > ol > li.certificationArea > *{flex: 1;}
-.productArea > ol > li.certificationArea > div h3{margin-bottom: 2.188rem;}
-.productArea > ol > li.certificationArea > div > p{margin-bottom: 3.750rem;}
-.productArea > ol > li.certificationArea > div div{font-weight: 700;}
-.productArea > ol > li.certificationArea > div div > mark{display: block; font-size: 5.625rem; margin-bottom: 2.188rem;}
-.productArea > ol > li.certificationArea > div div p{margin-bottom: 2.500rem;}
-.productArea > ol > li.certificationArea > div div p mark{font-size: 11.438rem; color: #bc5117; position: relative;}
-.productArea > ol > li.certificationArea > div div p mark::after{content: ''; position: absolute; left: 0; bottom: 1.875rem; width: 100%; height: 3.438rem; background-color: #f8f7ba; z-index: -1;}
-.productArea > ol > li.certificationArea > img{max-width: 50%;}
-.productArea > ol > li.contractArea > div h3{margin-bottom: 6.250rem;}
-.productArea > ol > li.contractArea > div ul{display: flex; justify-content: space-between;}
-.productArea > ol > li.contractArea > div ul li{width: 23%; height: 41.000rem; display: flex; flex-direction: column; justify-content: space-between;}
-.productArea > ol > li.contractArea > div ul li img{width: 100%;}
-.productArea > ol > li.contractArea > div ul li span{display: block; font-size: 1.250rem; text-align: center; line-height: 4.688rem; border: 0.125rem solid #a3a3a3; border-radius: 10rem;}
-.productArea .centerBG{font-weight: 700; text-align: center; padding: 15.625rem 0; background: url('../images/center-bg.png') no-repeat center / cover;}
-.productArea .centerBG mark{display: block; font-size: 7.500rem; color: #ffed55; margin-bottom: 1.875rem;}
-.productArea .centerBG p{font-size: 1.688rem; color: white; line-height: 2.938rem; max-width: 37.500rem; margin: 0 auto;}
-.productArea > ol > li.carbonArea{background: url('../images/carbonImg.png') no-repeat right top 2.500rem / 46.78%;}
-.productArea > ol > li.carbonArea div{padding-bottom: 10.000rem;}
-.productArea > ol > li.carbonArea div ul{line-height: 3.438rem;}
-.productArea > ol > li.transactionArea div p{text-align: center; padding-top: 41.250rem; background: url('../images/transactionImg.png') no-repeat center top 3.750rem / 70%;}  
-.productArea > ol > li.uproarArea div{padding-bottom: 26.875rem; background: url('../images/uproarImg.png') no-repeat center bottom / 90%;}
-.productArea .bottomBG{padding: 8.125rem 0; background: url('../images/bottom-bg.png') no-repeat center / cover;}
-.productArea .bottomBG figcaption{max-width: 70.938rem; margin: 0 auto;}
-.productArea .bottomBG figcaption input{border: none;}
-.productArea .bottomBG figcaption legend{font-size: 3.500rem; font-weight: 800; color: white; margin-bottom: 3.438rem;}
-.productArea .bottomBG figcaption legend small{display: block; font-size: 1.875rem; margin-bottom: 1.250rem;}
-.productArea .bottomBG figcaption ul{display: flex; justify-content: space-between; margin-bottom: 3.125rem;}
-.productArea .bottomBG figcaption ul li{width: 44.5%;}
-.productArea .bottomBG figcaption ul li input{font-size: 1.875rem; font-weight: 700; width: 100%; height: 5.625rem; padding: 0 2.500rem; box-sizing: border-box; border-radius: 10rem;}
-.productArea .bottomBG figcaption ul li input::placeholder{color: rgba(0, 0, 0, 0.7);}
-.productArea .bottomBG figcaption input[type="submit"]{display: block; font-size: 2.313rem; font-weight: 700; color: white; width: 22.500rem; line-height: 5.000rem; background-color: rgba(0, 0, 0, 0.5); margin: 0 auto; border-radius: 10rem;}
-.productArea > ol > li.locationArea div h3{margin-bottom: 1.875rem;}
-.productArea > ol > li.locationArea div p{margin-bottom: 3.750rem;}
-.productArea > ol > li.locationArea div iframe{width: 100%;}
-.productArea > ol > li.locationArea div dl{padding: 3.125rem 0; display: flex; font-size: 1.688rem; font-weight: 700; border-bottom: 1px solid #bcbcbc;}
-.productArea > ol > li.locationArea div dl dt{padding: 0 3.125rem; width: 16.563rem;}
-.productArea > ol > li.locationArea div dl dd{}
+    /* 투자 상품 */
+    .productArea > .topBG{padding: 10.625rem 0; background: url('../images/top-bg.png') no-repeat center / cover; text-align: center; color: white;}
+    .productArea > .topBG h2{font-size: 4.688rem; font-weight: 700; margin-bottom: 3.750rem;}
+    .productArea > .topBG p{font-size: 2.375rem; font-weight: 500; line-height: 3.125rem;}
+    .productArea > ol > li{padding: 8.750rem 0; font-weight: 800; color: #2c2c2c; counter-increment: productList;}
+    .productArea > ol > li:not(:last-child){border-bottom: 1px solid #434343;}
+    .productArea > ol > li mark.brown{color: #7a3415;}
+    .productArea > ol > li mark.brown2{color: #8b2d03;}
+    .productArea > ol > li mark.green{color: #0a4b09;}
+    .productArea > ol > li h3{font-size: 3.188rem; line-height: 4.250rem;}
+    .productArea > ol > li > div > :is(ul , mark , p){font-size: 1.750rem; line-height: 2.500rem;}
+    .productArea > ol > li > div > span{display: inline-block; margin-bottom: 1.875rem; position: relative;}
+    .productArea > ol > li > div > span::before{content: '0' counter(productList); font-size: 6.563rem; font-weight: 700;}
+    .productArea > ol > li > div > span::after{content: ''; position: absolute; left: 0; bottom: 0; width: 100%; height: 2.813rem; background-color: #f6ff00; z-index: -1;}
+    .productArea > ol > li > div ul{margin-top: 1.250rem;}
+    .productArea > ol > li > div ul + mark{display: block; margin-top: 2.188rem;}
+    .productArea > ol > li > div :is(button , a) {margin: 0 3.750rem; width: 25.000rem; line-height: 5.313rem; font-size: 1.875rem; font-weight: 800; color: white; text-align: center; border-radius: 1.250rem; background-color: #16205a; margin-top: 1.875rem;}
+    .productArea > ol > li > div ol{margin-top: 4.375rem;}
+    .productArea > ol > li > div ol li{font-size: 2.188rem; padding: 3.125rem; border-radius: 10rem; box-shadow: 0.313rem 0.313rem 1.250rem -0.625rem rgba(0, 0, 0, 0.5);}
+    .productArea > ol > li > div ol li:not(:last-child){margin-bottom: 2.500rem;}
+    .productArea > ol > li.revenueArea div{padding-bottom: 31.250rem; background: url('../images/revenueImg.png') no-repeat center bottom / 85%;}
+    .productArea > ol > li.investArea > div{padding: 4.063rem 50% 4.063rem 0; box-sizing: border-box; background: url('../images/investImg.png') no-repeat right center / 50%;}
+    .productArea > ol > li.investArea > div .popupArea > div{padding: 3.438rem 1.250rem 1.250rem;  text-align: center;}
+    .productArea > ol > li.investArea > div .popupArea > div fieldset legend{display: block; font-size: 2.188rem; font-weight: 800; color: #05354d; margin-bottom: 1.250rem;}
+    .productArea > ol > li.investArea > div .popupArea > div fieldset input[type="text"]{width: 21.250rem; height: 2.625rem; border: 1px solid #a7a7a7; border-radius: 0.625rem; text-align: center; box-sizing: border-box; margin-bottom: 0.938rem;}
+    .productArea > ol > li.investArea > div .popupArea > div fieldset input[type="text"]::placeholder{color: #555555;}
+    .productArea > ol > li.investArea > div .popupArea > div fieldset table{width: 21.250rem; margin: 0 auto 1.250rem;}
+    .productArea > ol > li.investArea > div .popupArea > div fieldset table tr{font-size: 1.250rem; line-height: 3.438rem; font-weight: 700;}
+    .productArea > ol > li.investArea > div .popupArea > div fieldset table tbody tr{color: #555555; border-bottom: 0.125rem solid #e6e6e6;}
+    .productArea > ol > li.investArea > div .popupArea > div fieldset table tfoot tr{background-color: #fefbe5;}
+    .productArea > ol > li.investArea > div .popupArea > div fieldset p{font-size: 0.813rem; color: #aa0000; font-weight: 400; margin-bottom: 0.625rem;}
+    .productArea > ol > li.investArea > div .popupArea > div fieldset input[type="submit"]{width: 25.938rem; height: 3.750rem; font-size: 1.875rem; color: white; background-color: #008cd3; border-radius: 0.625rem; border: none;}
+    .productArea > ol > li.satisfactionArea img{width: 100%; border-radius: 12.500rem 0 0 12.500rem; box-shadow: 0.625rem 0.313rem 1.875rem -0.625rem rgba(0, 0, 0, 0.5);}
+    .productArea > ol > li.satisfactionArea img:first-of-type{margin-top: 4.688rem;}
+    .productArea > ol > li.satisfactionArea img:not(:last-of-type){margin-bottom: 4.688rem;}
+    .productArea > ol > li.certificationArea{display: flex; align-items: center; gap: 3.125rem;}
+    .productArea > ol > li.certificationArea > *{flex: 1;}
+    .productArea > ol > li.certificationArea > div h3{margin-bottom: 2.188rem;}
+    .productArea > ol > li.certificationArea > div > p{margin-bottom: 3.750rem;}
+    .productArea > ol > li.certificationArea > div div{font-weight: 700;}
+    .productArea > ol > li.certificationArea > div div > mark{display: block; font-size: 5.625rem; margin-bottom: 2.188rem;}
+    .productArea > ol > li.certificationArea > div div p{margin-bottom: 2.500rem;}
+    .productArea > ol > li.certificationArea > div div p mark{font-size: 11.438rem; color: #bc5117; position: relative;}
+    .productArea > ol > li.certificationArea > div div p mark::after{content: ''; position: absolute; left: 0; bottom: 1.875rem; width: 100%; height: 3.438rem; background-color: #f8f7ba; z-index: -1;}
+    .productArea > ol > li.certificationArea > img{max-width: 50%;}
+    .productArea > ol > li.contractArea > div h3{margin-bottom: 6.250rem;}
+    .productArea > ol > li.contractArea > div ul{display: flex; justify-content: space-between;}
+    .productArea > ol > li.contractArea > div ul li{width: 23%; height: 41.000rem; display: flex; flex-direction: column; justify-content: space-between;}
+    .productArea > ol > li.contractArea > div ul li img{width: 100%;}
+    .productArea > ol > li.contractArea > div ul li span{display: block; font-size: 1.250rem; text-align: center; line-height: 4.688rem; border: 0.125rem solid #a3a3a3; border-radius: 10rem;}
+    .productArea .centerBG{font-weight: 700; text-align: center; padding: 15.625rem 0; background: url('../images/center-bg.png') no-repeat center / cover;}
+    .productArea .centerBG mark{display: block; font-size: 7.500rem; color: #ffed55; margin-bottom: 1.875rem;}
+    .productArea .centerBG p{font-size: 1.688rem; color: white; line-height: 2.938rem; max-width: 37.500rem; margin: 0 auto;}
+    .productArea > ol > li.carbonArea{background: url('../images/carbonImg.png') no-repeat right top 2.500rem / 46.78%;}
+    .productArea > ol > li.carbonArea div{padding-bottom: 10.000rem;}
+    .productArea > ol > li.carbonArea div ul{line-height: 3.438rem;}
+    .productArea > ol > li.transactionArea div p{text-align: center; padding-top: 41.250rem; background: url('../images/transactionImg.png') no-repeat center top 3.750rem / 70%;}  
+    .productArea > ol > li.uproarArea div{padding-bottom: 26.875rem; background: url('../images/uproarImg.png') no-repeat center bottom / 90%;}
+    .productArea .bottomBG{padding: 8.125rem 0; background: url('../images/bottom-bg.png') no-repeat center / cover;}
+    .productArea .bottomBG figcaption{max-width: 70.938rem; margin: 0 auto;}
+    .productArea .bottomBG figcaption input{border: none;}
+    .productArea .bottomBG figcaption legend{font-size: 3.500rem; font-weight: 800; color: white; margin-bottom: 3.438rem;}
+    .productArea .bottomBG figcaption legend small{display: block; font-size: 1.875rem; margin-bottom: 1.250rem;}
+    .productArea .bottomBG figcaption ul{display: flex; justify-content: space-between; margin-bottom: 3.125rem;}
+    .productArea .bottomBG figcaption ul li{width: 44.5%;}
+    .productArea .bottomBG figcaption ul li input{font-size: 1.875rem; font-weight: 700; width: 100%; height: 5.625rem; padding: 0 2.500rem; box-sizing: border-box; border-radius: 10rem;}
+    .productArea .bottomBG figcaption ul li input::placeholder{color: rgba(0, 0, 0, 0.7);}
+    .productArea .bottomBG figcaption input[type="submit"]{display: block; font-size: 2.313rem; font-weight: 700; color: white; width: 22.500rem; line-height: 5.000rem; background-color: rgba(0, 0, 0, 0.5); margin: 0 auto; border-radius: 10rem;}
+    .productArea > ol > li.locationArea div h3{margin-bottom: 1.875rem;}
+    .productArea > ol > li.locationArea div p{margin-bottom: 3.750rem;}
+    .productArea > ol > li.locationArea div iframe{width: 100%;}
+    .productArea > ol > li.locationArea div dl{padding: 3.125rem 0; display: flex; font-size: 1.688rem; font-weight: 700; border-bottom: 1px solid #bcbcbc;}
+    .productArea > ol > li.locationArea div dl dt{padding: 0 3.125rem; width: 16.563rem;}
+}
