@@ -5,8 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0 ,maximum-scale=1.0, user-scalable=0">
     <!-- Iphone 모바일 확대 방지  maximum-scale=1.0, user-scalable=0-->
-    <title>Document</title> 
+    <title>METAHIPER</title> 
     <link rel="stylesheet" href="css/import.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/common.js"></script>
 </head>
 <body>
     <header>
@@ -16,12 +20,30 @@
         <div class="contentSize">
             <div class="leftArea">
                 <h2>아마존 탄소배출권 투자상품</h2>
-                <div class="textBox">
+                <!-- <div class="textBox">
                     <p>
                         <mark class="green">투자</mark>에는 때가 있다.<br>
                         <mark class="blue">성장가치</mark>를 보고 투자하는<br>
                         <mark class="green">탄소배출권</mark> 투자상품
                     </p>
+                </div> -->
+                <div class="swiper topSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <mark class="green">투자</mark>에는 때가 있다.<br>
+                            <mark class="blue">성장가치</mark>를 보고 투자하는<br>
+                            <mark class="green">탄소배출권</mark> 투자상품
+                        </div>
+                        <div class="swiper-slide">
+                            두번째
+                        </div>
+                        <div class="swiper-slide">
+                            세번째
+                        </div>
+                        <div class="swiper-slide">
+                            네번째
+                        </div>
+                    </div>
                 </div>
                 <ul>
                     <li><span>15% 수익율</span></li>
@@ -46,19 +68,40 @@
     </section>
     <nav>
         <ul class="contentSize">
-            <li><a href="">CDM 투자상품</a></li>
-            <li><a href="">상세내용</a></li>
-            <li><a href="">1:1 상담신청</a></li>
+            <li><a href="" data-click="invest">CDM 투자상품</a></li>
+            <li><a href="" data-click="detail">상세내용</a></li>
+            <li><a href="" data-click="consulting">1:1 상담신청</a></li>
         </ul>
     </nav>
     <section class="productArea">
-        <div class="topBG">
-            <h2>탄소배출권 투자상품</h2>
+        <div class="topBG" data-scroll="invest">
+            <div class="swiper titleSwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <h2>탄소배출권 투자상품</h2>
+                        <p>
+                            페루 아마존 청정지역을 35년동안 임대 계약하여<br>
+                            산림 황폐화를 최소화 하고 이에 제공되는 탄소배출권으로<br>
+                            수익을 보장받는 투자 상품입니다.
+                        </p>
+                    </div>
+                    <div class="swiper-slide">
+                        두번째
+                    </div>
+                    <div class="swiper-slide">
+                        세번째
+                    </div>
+                    <div class="swiper-slide">
+                        네번째
+                    </div>
+                </div>
+            </div>
+            <!-- <h2>탄소배출권 투자상품</h2>
             <p>
                 페루 아마존 청정지역을 35년동안 임대 계약하여<br>
                 산림 황폐화를 최소화 하고 이에 제공되는 탄소배출권으로<br>
                 수익을 보장받는 투자 상품입니다.
-            </p>
+            </p> -->
         </div>
         <ol class="contentSize">
             <li class="revenueArea">
@@ -160,7 +203,7 @@
                 </div>
             </li>
         </ol>
-        <div class="centerBG">
+        <div class="centerBG" data-scroll="detail">
             <mark>“197개국”</mark>
             <p>
                 탄소배출권 규제는 전세계 197개국이 시행 중이며 
@@ -206,7 +249,7 @@
                 </div>
             </li>
         </ol>
-        <div class="bottomBG">
+        <div class="bottomBG" data-scroll="consulting">
             <form class="contentSize">
                 <figcaption>
                     <legend>
