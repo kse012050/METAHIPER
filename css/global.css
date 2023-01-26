@@ -20,6 +20,7 @@
 .topArea > div form fieldset input,
 .productArea > ol > li,
 .productArea .bottomBG,
+.popupArea > div fieldset
 footer{font-family: 'Nanum Gothic', serif;}
 
 /* SBAggroB */
@@ -39,6 +40,10 @@ mark.blue{color: #16205a;}
 
 .pLeft01{padding: 0 20px;}
 .pLeft02{padding: 0 40px;}
+
+/* 팝업 */
+.popupArea{display: none; justify-content: center; align-items: center; position: fixed; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.8); z-index: 1000;}
+.popupArea > div{background-color: white; border-radius: 20px;}
 
 /* 해더 */
 header{background-color: white; padding: 25px 0; text-align: center;}

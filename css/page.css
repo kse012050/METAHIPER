@@ -60,7 +60,17 @@ nav ul li.active a{background-color: white; border-top: 1px solid #0a4b09;}
 /* .productArea > ol > li.investArea{display: flex; align-items: center; gap: 50px;}
 .productArea > ol > li.investArea > *{flex: 1;}
 .productArea > ol > li.investArea img{max-width: 50%;} */
-.productArea > ol > li.investArea div{padding: 65px 50% 65px 0; box-sizing: border-box; background: url('../images/investImg.png') no-repeat right center / 50%;}
+.productArea > ol > li.investArea > div{padding: 65px 50% 65px 0; box-sizing: border-box; background: url('../images/investImg.png') no-repeat right center / 50%;}
+.productArea > ol > li.investArea > div .popupArea > div{padding: 55px 20px 20px;  text-align: center;}
+.productArea > ol > li.investArea > div .popupArea > div fieldset legend{display: block; font-size: 35px; font-weight: 800; color: #05354d; margin-bottom: 20px;}
+.productArea > ol > li.investArea > div .popupArea > div fieldset input[type="text"]{width: 340px; height: 42px; border: 1px solid #a7a7a7; border-radius: 10px; text-align: center; box-sizing: border-box; margin-bottom: 15px;}
+.productArea > ol > li.investArea > div .popupArea > div fieldset input[type="text"]::placeholder{color: #555555;}
+.productArea > ol > li.investArea > div .popupArea > div fieldset table{width: 340px; margin: 0 auto 20px;}
+.productArea > ol > li.investArea > div .popupArea > div fieldset table tr{font-size: 20px; line-height: 55px; font-weight: 700;}
+.productArea > ol > li.investArea > div .popupArea > div fieldset table tbody tr{color: #555555; border-bottom: 2px solid #e6e6e6;}
+.productArea > ol > li.investArea > div .popupArea > div fieldset table tfoot tr{background-color: #fefbe5;}
+.productArea > ol > li.investArea > div .popupArea > div fieldset p{font-size: 13px; color: #aa0000; font-weight: 400; margin-bottom: 10px;}
+.productArea > ol > li.investArea > div .popupArea > div fieldset input[type="submit"]{width: 415px; height: 60px; font-size: 30px; color: white; background-color: #008cd3; border-radius: 10px; border: none;}
 .productArea > ol > li.satisfactionArea img{width: 100%; border-radius: 200px 0 0 200px; box-shadow: 10px 5px 30px -10px rgba(0, 0, 0, 0.5);}
 .productArea > ol > li.satisfactionArea img:first-of-type{margin-top: 75px;}
 .productArea > ol > li.satisfactionArea img:not(:last-of-type){margin-bottom: 75px;}

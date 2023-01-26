@@ -68,9 +68,9 @@
     </section>
     <nav>
         <ul class="contentSize">
-            <li><a href="" data-click="invest">CDM 투자상품</a></li>
-            <li><a href="" data-click="detail">상세내용</a></li>
-            <li><a href="" data-click="consulting">1:1 상담신청</a></li>
+            <li><a href="" data-scrollClick="invest">CDM 투자상품</a></li>
+            <li><a href="" data-scrollClick="detail">상세내용</a></li>
+            <li><a href="" data-scrollClick="consulting">1:1 상담신청</a></li>
         </ul>
     </nav>
     <section class="productArea">
@@ -123,7 +123,37 @@
                         <li>- 탄소배출권 1평 당 1만2천원 수익률 15%</li>
                     </ul>
                     <mark class="brown pLeft01">* 개인 투자 300만평까지만 가능하며 물량 소진 시 바로 상품 투자 종료됩니다. </mark>
-                    <button>투자 수익금 계산하기</button>
+                    <button data-popupOpen="revenue">투자 수익금 계산하기</button>
+                    <div class="popupArea" data-popup="revenue">
+                        <div>
+                            <form>
+                                <fieldset>
+                                    <legend>투자수익금 계산</legend>
+                                    <input type="text" placeholder="투자금 입력 (숫자만 입력하세요.)">
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <th>월 수익금</th>
+                                                <td>35,000</td>
+                                            </tr>
+                                            <tr>
+                                                <th>연 수익금</th>
+                                                <td>35,000</td>
+                                            </tr>
+                                        </tbody>
+                                        <tfoot>
+                                            <tr>
+                                                <th>총 수익금</th>
+                                                <td>35,000</td>
+                                            </tr>
+                                        </tfoot>
+                                    </table>
+                                    <p>투자 원금은 보장되며 연 이자 15%의 안전한 투자상품입니다.</p>
+                                    <input type="submit" value="간편 상담 신청">
+                                </fieldset>
+                            </form>
+                        </div>
+                    </div>
                 </div>
                 <!-- <img src="images/investImg.png" alt=""> -->
             </li>
