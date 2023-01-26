@@ -54,9 +54,10 @@ nav ul li a{display: block; font-size: 22px; font-weight: 800; color: #363636; l
 .productArea > ol > li > div ol li{font-size: 35px; padding: 50px; border-radius: 10em; box-shadow: 5px 5px 20px -10px rgba(0, 0, 0, 0.5);}
 .productArea > ol > li > div ol li:not(:last-child){margin-bottom: 40px;}
 .productArea > ol > li.revenueArea div{padding-bottom: 500px; background: url('../images/revenueImg.png') no-repeat center bottom / 85%;}
-.productArea > ol > li.investArea{display: flex; align-items: center; gap: 50px;}
+/* .productArea > ol > li.investArea{display: flex; align-items: center; gap: 50px;}
 .productArea > ol > li.investArea > *{flex: 1;}
-.productArea > ol > li.investArea img{max-width: 50%;}
+.productArea > ol > li.investArea img{max-width: 50%;} */
+.productArea > ol > li.investArea div{padding: 65px 50% 65px 0; box-sizing: border-box; background: url('../images/investImg.png') no-repeat right center / 50%;}
 .productArea > ol > li.satisfactionArea img{width: 100%; border-radius: 200px 0 0 200px; box-shadow: 10px 5px 30px -10px rgba(0, 0, 0, 0.5);}
 .productArea > ol > li.satisfactionArea img:first-of-type{margin-top: 75px;}
 .productArea > ol > li.satisfactionArea img:not(:last-of-type){margin-bottom: 75px;}
@@ -72,9 +73,9 @@ nav ul li a{display: block; font-size: 22px; font-weight: 800; color: #363636; l
 .productArea > ol > li.certificationArea > img{max-width: 50%;}
 .productArea > ol > li.contractArea > div h3{margin-bottom: 100px;}
 .productArea > ol > li.contractArea > div ul{display: flex; justify-content: space-between;}
-.productArea > ol > li.contractArea > div ul li{width: 28%;}
-.productArea > ol > li.contractArea > div ul li img{width: 100%; margin-bottom: 30px;}
-.productArea > ol > li.contractArea > div ul li span{display: block; font-size: 27px; text-align: center; line-height: 75px; border: 2px solid #a3a3a3; border-radius: 10em;}
+.productArea > ol > li.contractArea > div ul li{width: 23%; height: 656px; display: flex; flex-direction: column; justify-content: space-between;}
+.productArea > ol > li.contractArea > div ul li img{width: 100%;}
+.productArea > ol > li.contractArea > div ul li span{display: block; font-size: 20px; text-align: center; line-height: 75px; border: 2px solid #a3a3a3; border-radius: 10em;}
 .productArea .centerBG{font-weight: 700; text-align: center; padding: 250px 0; background: url('../images/center-bg.png') no-repeat center / cover;}
 .productArea .centerBG mark{display: block; font-size: 120px; color: #ffed55; margin-bottom: 30px;}
 .productArea .centerBG p{font-size: 27px; color: white; line-height: 47px; max-width: 600px; margin: 0 auto;}

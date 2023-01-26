@@ -12,7 +12,7 @@
     font-weight: normal;
     font-style: normal;
 }
-
+body{zoom: 0.8;}
 /* 나눔고딕 */
 .topArea > div .leftArea h2 ,
 .topArea > div .leftArea ul li,
