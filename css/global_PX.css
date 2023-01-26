@@ -1,4 +1,3 @@
-html{font-size: 12.8px;}
 /* 폰트 */
 @font-face {
     font-family: 'SBAggroB';
@@ -33,24 +32,24 @@ footer{font-family: 'Nanum Gothic', serif;}
 .productArea .centerBG{font-family: 'GmarketSansMedium';}
 
 /* 컨텐츠 크기 */
-.contentSize{max-width: 91.250rem; margin: 0 auto;}
+.contentSize{max-width: 1460px; margin: 0 auto;}
 
 /* 포인트 색상 */
 mark.green{color: #56a54d;}
 mark.blue{color: #16205a;}
 
-.pLeft01{padding: 0 1.250rem;}
-.pLeft02{padding: 0 2.500rem;}
+.pLeft01{padding: 0 20px;}
+.pLeft02{padding: 0 40px;}
 
 /* 팝업 */
 .popupArea{display: none; justify-content: center; align-items: center; position: fixed; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.8); z-index: 1000;}
-.popupArea > div{background-color: white; border-radius: 1.250rem;}
+.popupArea > div{background-color: white; border-radius: 20px;}
 
 /* 해더 */
-header{background-color: white; padding: 1.563rem 0; text-align: center;}
+header{background-color: white; padding: 25px 0; text-align: center;}
 
 /* 푸터 */
-footer{padding: 10.000rem 0; background: url('../images/footer-bg.png') no-repeat center / cover;}
+footer{padding: 160px 0; background: url('../images/footer-bg.png') no-repeat center / cover;}
 footer > div{display: flex; align-items: center;}
-footer > div img{flex-shrink: 0; width: 13.125rem; margin-right: 6.250rem;}
-footer > div address p{font-size: 1.625rem; font-weight: 800; color: #fff; line-height: 2.813rem; }
+footer > div img{flex-shrink: 0; width: 210px; margin-right: 100px;}
+footer > div address p{font-size: 26px; font-weight: 800; color: #fff; line-height: 45px; }
