@@ -25,6 +25,30 @@ $(document).ready(function(){
         },
         spaceBetween: 30,
     });
+
+    $('.bottomFix input[type="submit"]').click(function(e){
+        if($(window).width() <= 1100){
+            e.preventDefault();
+            $('html').animate({scrollTop : $(`.topArea > div .leftArea h2`).offset().top})
+        }
+    })
+    console.log('50000'.replace('0' ,''));
+    $('.popupArea input[type="text"]').keyup(function(e){
+        let value = parseInt(($(this).val()).replaceAll('0','').replaceAll(',',''));
+        if(!$(this).val() || isNaN(value)){
+            $(this).val('');
+            return
+        }
+        if ( e.keyCode === 8 ) {
+            value = Math.floor(value * 0.1)
+        }
+        const result = value * 1000000;
+        $(this).val(result.toLocaleString());
+        $('[data-proceeds="year"]').html((result * 0.15).toLocaleString())
+        $('[data-proceeds="month"]').html((result * 0.15 / 12).toLocaleString())
+        $('[data-proceeds="total"]').html((result * 0.15 * 35).toLocaleString())
+
+    })
 })
 
 // 메뉴 스크롤 이벤트
@@ -51,7 +75,8 @@ function scrollEvent(){
 
 // 팝업 이벤트
 function popupEvent(){
-    $('[data-popupOpen]').click(function(){
+    $('[data-popupOpen]').click(function(e){
+        e.preventDefault();
         const attrName = $(this).attr('data-popupOpen');
         $(`[data-popup="${attrName}"]`).fadeIn().css('display','flex');
         $('body').css('overflow','hidden');
@@ -62,7 +87,6 @@ function popupEvent(){
         $('body').removeAttr('style');
     })
     $('.popupArea > div').click(function(e){
-        console.log(1);
         e.stopPropagation();
     })
 }

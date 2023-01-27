@@ -17,6 +17,15 @@
     /* 해더 */
     header{background-color: white; padding: 0.938rem 0; text-align: center;}
     header img{width: 5.938rem;}
+
+    /* 하단 픽스드 */
+    .bottomFix{position: fixed; bottom: 0; left: 0; width: 100%; z-index: 100; background-color: #f2f2f2; padding: 1.5rem 0; border-top: 1px solid #dbdbdb;}
+    .bottomFix fieldset{display: flex; justify-content: space-between;}
+    .bottomFix fieldset *{width: 48%; font-size: 1.5rem;}
+    .bottomFix fieldset input[type="text"]{border: 1px solid #e3e3e3; padding: 1rem 2rem; box-sizing: border-box;}
+    .bottomFix fieldset :is(button , input[type="submit"]){height: 5rem; font-weight: 700; border-radius: 0.938rem; box-sizing: border-box;}
+    .bottomFix fieldset button{color: #192264; border:2px solid #192264; background-color: white;}
+    .bottomFix fieldset input[type="submit"]{background-color: #192264; color: white; border: none;}
     
     /* 푸터 */
     footer{background: url('../images/footer-bg.png') no-repeat center / cover;}
