@@ -6,6 +6,12 @@
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: 'SBAggroB';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroM.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
 
 @font-face {
     font-family: 'GmarketSansMedium';
@@ -36,12 +42,12 @@
  mark.green{color: #56a54d;}
  mark.blue{color: #16205a;}
 
-@media screen and (min-width : 801px) {
+@media screen and (min-width : 1101px) {
     @media screen and (min-width : 1241px) {
         html{font-size: 12.8px;}
     }
     @media screen and (max-width : 1240px) {
-        html{font-size: 8px;}
+        html{font-size: 11px;}
     }
 
     /* 컨텐츠 크기 */
