@@ -32,17 +32,33 @@ $(document).ready(function(){
             $('html').animate({scrollTop : $(`.topArea > div .leftArea h2`).offset().top})
         }
     })
-    console.log('50000'.replace('0' ,''));
+    console.log('1234'.at(-1));
     $('.popupArea input[type="text"]').keyup(function(e){
-        let value = parseInt(($(this).val()).replaceAll('0','').replaceAll(',',''));
-        if(!$(this).val() || isNaN(value)){
+        let value = $(this).val().split(',');    
+        
+        if ( e.keyCode === 8 ) {
+            value = Math.floor(value * 0.1)
+        }else{
+            if(value.length > 2){
+                let lastValue = value.pop();
+                value.pop();
+                if(lastValue.length > 3){
+                    lastValue = lastValue.substring(3)
+                    console.log(lastValue);
+                    value = value.join('') + lastValue[0]
+                }else{
+                    value = value.join('');
+                }
+            }
+        }
+
+        if(!value || isNaN(value)){
+            console.log('??');
             $(this).val('');
             return
         }
-        if ( e.keyCode === 8 ) {
-            value = Math.floor(value * 0.1)
-        }
-        const result = value * 1000000;
+
+        const result = Number(value) * 1000000;
         $(this).val(result.toLocaleString());
         $('[data-proceeds="year"]').html((result * 0.15).toLocaleString())
         $('[data-proceeds="month"]').html((result * 0.15 / 12).toLocaleString())
