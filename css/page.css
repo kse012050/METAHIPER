@@ -53,17 +53,16 @@
     .productArea > ol > li > div ol li{font-size: 2.188rem; padding: 3.125rem; border-radius: 10rem; box-shadow: 0.313rem 0.313rem 1.250rem -0.625rem rgba(0, 0, 0, 0.5);}
     .productArea > ol > li > div ol li:not(:last-child){margin-bottom: 2.500rem;}
     .productArea > ol > li.revenueArea div{padding-bottom: 31.250rem; background: url('../images/revenueImg.png') no-repeat center bottom / 85%;}
-    .productArea > ol > li.investArea > div{padding: 4.063rem 50% 4.063rem 0; box-sizing: border-box; background: url('../images/investImg.png') no-repeat right center / 50%;}
-    .productArea > ol > li.investArea > div .popupArea > div{padding: 3rem 2rem 2rem;  text-align: center;}
-    .productArea > ol > li.investArea > div .popupArea > div fieldset legend{display: block; font-size: 3.188rem; font-weight: 800; color: #05354d; margin-bottom: 2rem;}
-    .productArea > ol > li.investArea > div .popupArea > div fieldset input[type="text"]{font-size: 1.750rem; width: 30rem; height: 4rem; border: 1px solid #a7a7a7; border-radius: 0.625rem; text-align: center; box-sizing: border-box; margin-bottom: 1rem;}
+    .productArea > ol > li.investArea > div .popupArea > div{padding: 3.438rem 1.250rem 1.250rem;  text-align: center;}
+    .productArea > ol > li.investArea > div .popupArea > div fieldset legend{display: block; font-size: 2.188rem; font-weight: 800; color: #05354d; margin-bottom: 1.250rem;}
+    .productArea > ol > li.investArea > div .popupArea > div fieldset input[type="text"]{width: 21.250rem; height: 2.625rem; border: 1px solid #a7a7a7; border-radius: 0.625rem; text-align: center; box-sizing: border-box; margin-bottom: 0.938rem;}
     .productArea > ol > li.investArea > div .popupArea > div fieldset input[type="text"]::placeholder{color: #555555;}
-    .productArea > ol > li.investArea > div .popupArea > div fieldset table{width: 30rem; margin: 0 auto 1.5rem;}
-    .productArea > ol > li.investArea > div .popupArea > div fieldset table tr{font-size: 1.750rem; line-height: 3.438rem; font-weight: 700;}
+    .productArea > ol > li.investArea > div .popupArea > div fieldset table{width: 21.250rem; margin: 0 auto 1.250rem;}
+    .productArea > ol > li.investArea > div .popupArea > div fieldset table tr{font-size: 1.250rem; line-height: 3.438rem; font-weight: 700;}
     .productArea > ol > li.investArea > div .popupArea > div fieldset table tbody tr{color: #555555; border-bottom: 0.125rem solid #e6e6e6;}
     .productArea > ol > li.investArea > div .popupArea > div fieldset table tfoot tr{background-color: #fefbe5;}
-    .productArea > ol > li.investArea > div .popupArea > div fieldset p{font-size: 1.250rem; color: #aa0000; font-weight: 400; margin-bottom: 1rem;}
-    .productArea > ol > li.investArea > div .popupArea > div fieldset input[type="submit"]{width: 40rem; height: 5rem; font-size: 2.5rem; color: white; background-color: #008cd3; border-radius: 0.625rem; border: none;}
+    .productArea > ol > li.investArea > div .popupArea > div fieldset p{font-size: 0.813rem; color: #aa0000; font-weight: 400; margin-bottom: 0.625rem;}
+    .productArea > ol > li.investArea > div .popupArea > div fieldset input[type="submit"]{width: 25.938rem; height: 3.750rem; font-size: 1.875rem; color: white; background-color: #008cd3; border-radius: 0.625rem; border: none;}
     .productArea > ol > li.satisfactionArea > div > div{margin-top: 4.688rem;}
     .productArea > ol > li.satisfactionArea > div > div div{padding-bottom: 25.8%; background-repeat: no-repeat; background-position: center; background-size: cover; border-radius: 12.500rem 0 0 12.500rem; box-shadow: 0.625rem 0.313rem 1.875rem -0.625rem rgba(0, 0, 0, 0.5); height: 0.1px; text-indent: -9999px;}
     .productArea > ol > li.satisfactionArea > div > div div:not(:last-child){margin-bottom: 4.688rem;}

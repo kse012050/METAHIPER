@@ -33,7 +33,17 @@ $(document).ready(function(){
         }
     })
     console.log('1234'.at(-1));
-    $('.popupArea input[type="text"]').keyup(function(e){
+    $('.popupArea input[type="text"]').on('input keydoun',function(e){
+        console.log(e);
+        this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');
+        let value = this.value;
+        const result = Number(value) * 1000000;
+        // $(this).val(value.toLocaleString() );
+        $('[data-proceeds="year"]').html((result * 0.15).toLocaleString())
+        $('[data-proceeds="month"]').html((result * 0.15 / 12).toLocaleString())
+        $('[data-proceeds="total"]').html((result * 0.15 * 35).toLocaleString())
+    })
+    /* $('.popupArea input[type="text"]').keyup(function(e){
         let value = $(this).val().split(',');    
         
         if ( e.keyCode === 8 ) {
@@ -64,7 +74,7 @@ $(document).ready(function(){
         $('[data-proceeds="month"]').html((result * 0.15 / 12).toLocaleString())
         $('[data-proceeds="total"]').html((result * 0.15 * 35).toLocaleString())
 
-    })
+    }) */
 })
 
 // 메뉴 스크롤 이벤트
