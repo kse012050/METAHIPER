@@ -32,13 +32,37 @@ $(document).ready(function(){
             $('html').animate({scrollTop : $(`.topArea > div .leftArea h2`).offset().top})
         }
     })
-    console.log('1234'.at(-1));
-    $('.popupArea input[type="text"]').on('input keydoun',function(e){
-        console.log(e);
+
+    // 수익금 커서 위치
+    $.fn.selectRange = function(start, end) {
+        if(end === undefined) {
+            end = start;
+        }
+        return this.each(function() {
+            if('selectionStart' in this) {
+                this.selectionStart = start;
+                this.selectionEnd = end;
+            } else if(this.setSelectionRange) {
+                this.setSelectionRange(start, end);
+            } else if(this.createTextRange) {
+                var range = this.createTextRange();
+                range.collapse(true);
+                range.moveEnd('character', end);
+                range.moveStart('character', start);
+                range.select();
+            }
+        });
+    };
+
+    // 수익금 인풋
+    $('#proceeds').on('input keydoun',function(e){
         this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');
         let value = this.value;
+        let valueLength = this.value.length;
+        if(value === ''){return}
+        $(this).val(value + '만원');
         const result = Number(value) * 1000000;
-        // $(this).val(value.toLocaleString() );
+        $('#proceeds').selectRange(valueLength );
         $('[data-proceeds="year"]').html((result * 0.15).toLocaleString())
         $('[data-proceeds="month"]').html((result * 0.15 / 12).toLocaleString())
         $('[data-proceeds="total"]').html((result * 0.15 * 35).toLocaleString())

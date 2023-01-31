@@ -2,7 +2,8 @@
 require_once "/opt/lampp/htdocs/vendor/autoload.php";
 use PHPMailer\PHPMailer\PHPMailer;
 
-sendEmail("이효중","hjlee@team1985.com","메일 테스트","메일 본문", "");
+// sendEmail("이효중","hjlee@team1985.com","메일 테스트","메일 본문", "");
+sendEmail("김성은","kse012050@naver.com","메일 테스트","메일 본문", "");
 function sendEmail($receiverName, $toMailAddress, $subject, $contentBody,$attachFilePath)
 {
     ////-----    이메일 발송   --------  ////

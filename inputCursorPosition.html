@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function(){
+            $.fn.selectRange = function(start, end) {
+                if(end === undefined) {
+                    end = start;
+                }
+                return this.each(function() {
+                    if('selectionStart' in this) {
+                        this.selectionStart = start;
+                        this.selectionEnd = end;
+                    } else if(this.setSelectionRange) {
+                        this.setSelectionRange(start, end);
+                    } else if(this.createTextRange) {
+                        var range = this.createTextRange();
+                        range.collapse(true);
+                        range.moveEnd('character', end);
+                        range.moveStart('character', start);
+                        range.select();
+                    }
+                });
+            };
+            $('#elem').selectRange(3,5); // select a range of text
+            
+            $('#elem').on('input' , function(){
+                $(this).selectRange(3); // set cursor position
+                
+            })
+        })
+
+    </script>
+</head>
+<body>
+    <input type="text" id="elem">
+</body>
+</html>
