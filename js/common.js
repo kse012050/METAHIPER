@@ -12,7 +12,8 @@ $(document).ready(function(){
     $('.bottomFix input[type="submit"]').click(function(e){
         if($(window).width() <= 1100){
             e.preventDefault();
-            $('html').animate({scrollTop : $(`.topArea > div .leftArea h2`).offset().top})
+            // $('html').animate({scrollTop : $(`.topArea > div .leftArea h2`).offset().top})
+            $('.applicationArea').fadeIn().css('display','flex')
         }
     })
 
