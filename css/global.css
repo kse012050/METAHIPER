@@ -27,7 +27,9 @@
  .topArea > div form fieldset input,
  .productArea > ol > li,
  .productArea .bottomBG,
- .popupArea > div fieldset
+ .popupArea > div fieldset,
+ .popupArea.applicationArea > div fieldset,
+ .popupArea.applicationComplete
  footer{font-family: 'Nanum Gothic', serif;}
 
  /* SBAggroB */
