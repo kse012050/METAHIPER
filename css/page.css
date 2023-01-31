@@ -5,7 +5,7 @@
     .topArea > div .leftArea{max-width: 43.125rem;}
     .topArea > div .leftArea h2{display: inline-block; font-size: 1.625rem; font-weight: 700; color: white; line-height: 3.438rem; padding: 0 3.125rem; background-color: #16205a; border-radius: 10rem;}
     .topArea > div .leftArea .topSwiper{ padding: 1.563rem 0;}
-    .topArea > div .leftArea .topSwiper .swiper-slide{font-family: 'SBAggroB'; font-size: 3.750rem; font-weight: 900; line-height: 5.313rem; color: #3e3e3e;}
+    .topArea > div .leftArea .topSwiper .swiper-slide{font-family: 'SBAggroB'; font-size: 3.750rem; font-weight: 500; line-height: 5.313rem; color: #3e3e3e;}
     .topArea > div .leftArea ul{display: flex; gap: 0.625rem;}
     .topArea > div .leftArea ul li{width: 14.063rem; padding-top: 10.000rem; background-repeat: no-repeat; background-position: center top; background-size: 14.063rem; box-shadow: 0.313rem 0.313rem 1.250rem -0.625rem rgba(0, 0, 0, 0.5);}
     .topArea > div .leftArea ul li:nth-child(1){background-image: url('../images/top-icon01.png');}
@@ -34,6 +34,7 @@
 
     /* 투자 상품 */
     .productArea > .topBG{padding: 10.625rem 0; background: url('../images/top-bg.png') no-repeat center / cover; text-align: center; color: white;}
+    .productArea > .topBG .titleSwiper{padding: 0.313rem;}
     .productArea > .topBG h2{font-size: 4.688rem; font-weight: 700; margin-bottom: 3.750rem;}
     .productArea > .topBG p{font-size: 2.375rem; font-weight: 500; line-height: 3.125rem;}
     .productArea > ol > li{padding: 8.750rem 0; font-weight: 800; color: #2c2c2c; counter-increment: productList;}
