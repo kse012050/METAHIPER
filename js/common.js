@@ -6,25 +6,8 @@ $(document).ready(function(){
     // 팝업 이벤트
     popupEvent()
 
-    var swiper = new Swiper(".topSwiper", {
-        effect : 'fade',
-        fadeEffect: {
-            crossFade: true
-        },
-        autoplay: {
-            delay: 3000,
-        },
-        spaceBetween: 30,
-        allowTouchMove : false
-    });
-    
-    var swiper = new Swiper(".titleSwiper", {
-        allowTouchMove : false,
-        autoplay: {
-            delay: 3000,
-        },
-        spaceBetween: 30,
-    });
+    // 슬라이더
+    sliderEvent();
 
     $('.bottomFix input[type="submit"]').click(function(e){
         if($(window).width() <= 1100){
@@ -33,72 +16,42 @@ $(document).ready(function(){
         }
     })
 
-    // 수익금 커서 위치
-    $.fn.selectRange = function(start, end) {
-        if(end === undefined) {
-            end = start;
-        }
-        return this.each(function() {
-            if('selectionStart' in this) {
-                this.selectionStart = start;
-                this.selectionEnd = end;
-            } else if(this.setSelectionRange) {
-                this.setSelectionRange(start, end);
-            } else if(this.createTextRange) {
-                var range = this.createTextRange();
-                range.collapse(true);
-                range.moveEnd('character', end);
-                range.moveStart('character', start);
-                range.select();
-            }
-        });
-    };
+    // 수익금
+    proceedsInput()
+   
 
-    // 수익금 인풋
-    $('#proceeds').on('input keydoun',function(e){
-        this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');
-        let value = this.value;
-        let valueLength = this.value.length;
-        if(value === ''){return}
-        $(this).val(value + '만원');
-        const result = Number(value) * 1000000;
-        $('#proceeds').selectRange(valueLength );
-        $('[data-proceeds="year"]').html((result * 0.15).toLocaleString())
-        $('[data-proceeds="month"]').html((result * 0.15 / 12).toLocaleString())
-        $('[data-proceeds="total"]').html((result * 0.15 * 35).toLocaleString())
+    $('[data-input="name"]').on('input',function(){
+        // 한글만 입력
+        this.value = this.value.replace(/[^ㄱ-ㅎㅏ-ㅣ가-힣]/g, '').replace(/(\..*)\./g, '$1').trim();
+        // 최대 6자리
+        const maxLength = Number($(this).attr('maxLength'));
+        this.value.length >= maxLength && (this.value = this.value.substr(0,maxLength));
+        // 글자만 판별
+        (/[^가-힣]/g.test(this.value) || !this.value) ? $(this).addClass('error') : $(this).removeClass('error');
     })
-    /* $('.popupArea input[type="text"]').keyup(function(e){
-        let value = $(this).val().split(',');    
-        
-        if ( e.keyCode === 8 ) {
-            value = Math.floor(value * 0.1)
-        }else{
-            if(value.length > 2){
-                let lastValue = value.pop();
-                value.pop();
-                if(lastValue.length > 3){
-                    lastValue = lastValue.substring(3)
-                    console.log(lastValue);
-                    value = value.join('') + lastValue[0]
-                }else{
-                    value = value.join('');
-                }
+
+    $('[data-input="mobile"]').on('input',function(){
+        // 숫자만 입력
+        this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');
+        // 최대 11자리
+        const maxLength = Number($(this).attr('maxLength'));
+        this.value.length < maxLength ? $(this).addClass('error') : $(this).removeClass('error');
+    })
+
+    $('input[type="submit"]').click(function(e){
+        e.preventDefault();
+        let isInput;
+        $(this).closest('form').find('[data-input]').each((i , input)=>{
+            if($(input).val().trim() === ''){
+                $(input).addClass('error');
             }
+            (!isInput && $(input).hasClass('error')) && (isInput = true);
+        })
+        $(this).closest('form').find('[data-input].error').first().focus();
+        if(!isInput){
+            alert('확인');
         }
-
-        if(!value || isNaN(value)){
-            console.log('??');
-            $(this).val('');
-            return
-        }
-
-        const result = Number(value) * 1000000;
-        $(this).val(result.toLocaleString());
-        $('[data-proceeds="year"]').html((result * 0.15).toLocaleString())
-        $('[data-proceeds="month"]').html((result * 0.15 / 12).toLocaleString())
-        $('[data-proceeds="total"]').html((result * 0.15 * 35).toLocaleString())
-
-    }) */
+    })
 })
 
 // 메뉴 스크롤 이벤트
@@ -138,5 +91,66 @@ function popupEvent(){
     })
     $('.popupArea > div').click(function(e){
         e.stopPropagation();
+    })
+}
+
+// 슬라이더 
+function sliderEvent(){
+    var topSwiper = new Swiper(".topSwiper", {
+        effect : 'fade',
+        fadeEffect: {
+            crossFade: true
+        },
+        autoplay: {
+            delay: 3000,
+        },
+        spaceBetween: 30,
+        allowTouchMove : false
+    });
+
+    var titleSwiper = new Swiper(".titleSwiper", {
+        allowTouchMove : false,
+        autoplay: {
+            delay: 3000,
+        },
+        spaceBetween: 30,
+    });
+}
+
+// 수익금 입력
+function proceedsInput(){
+     // 수익금 커서 위치
+     $.fn.selectRange = function(start, end) {
+        if(end === undefined) {
+            end = start;
+        }
+        return this.each(function() {
+            if('selectionStart' in this) {
+                this.selectionStart = start;
+                this.selectionEnd = end;
+            } else if(this.setSelectionRange) {
+                this.setSelectionRange(start, end);
+            } else if(this.createTextRange) {
+                var range = this.createTextRange();
+                range.collapse(true);
+                range.moveEnd('character', end);
+                range.moveStart('character', start);
+                range.select();
+            }
+        });
+    };
+    
+    // 수익금 인풋
+    $('#proceeds').on('input keydoun',function(e){
+        this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');
+        let value = this.value;
+        let valueLength = this.value.length;
+        if(value === ''){return}
+        $(this).val(value + '만원');
+        const result = Number(value) * 1000000;
+        $('#proceeds').selectRange(valueLength );
+        $('[data-proceeds="year"]').html((result * 0.15).toLocaleString())
+        $('[data-proceeds="month"]').html((result * 0.15 / 12).toLocaleString())
+        $('[data-proceeds="total"]').html((result * 0.15 * 35).toLocaleString())
     })
 }

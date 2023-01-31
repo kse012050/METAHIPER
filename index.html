@@ -20,13 +20,6 @@
         <div class="contentSize">
             <div class="leftArea">
                 <h2>아마존 탄소배출권 투자상품</h2>
-                <!-- <div class="textBox">
-                    <p>
-                        <mark class="green">투자</mark>에는 때가 있다.<br>
-                        <mark class="blue">성장가치</mark>를 보고 투자하는<br>
-                        <mark class="green">탄소배출권</mark> 투자상품
-                    </p>
-                </div> -->
                 <div class="swiper topSwiper">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
@@ -63,9 +56,9 @@
                         1:1 빠른 간편상담
                         <span><mark class="green">CRM투자상품</mark> 상담신청</span>
                     </strong>
-                    <input type="text" placeholder="이름">
-                    <input type="text" placeholder="연락처">
-                    <a href="">1:1 투자상담 예약</a>
+                    <input type="text" placeholder="이름" data-input="name" maxlength="6">
+                    <input type="text" placeholder="전화번호" data-input="mobile" maxlength="11">
+                    <input type="submit" value="1:1 투자상담 예약">
                     <a href="tel:+8216681340">바로 전화상담 1668-1340</a>
                     <a href="http://pf.kakao.com/_zTKrxj/chat">카카오톡 간편상담</a>
                 </fieldset>
@@ -311,10 +304,10 @@
                     </legend>
                     <ul>
                         <li>
-                            <input type="text" placeholder="이름">
+                            <input type="text" placeholder="이름" data-input="name" maxlength="6">
                         </li>
                         <li>
-                            <input type="text" placeholder="연락처">
+                            <input type="text" placeholder="전화번호" data-input="mobile" maxlength="11">
                         </li>
                     </ul>
                     <input type="submit" value="상담 예약하기">
@@ -375,8 +368,8 @@
         <div class="contentSize">
             <form>
                 <fieldset>
-                    <input type="text" placeholder="이름" class="desktop">
-                    <input type="text" placeholder="전화번호" class="desktop">
+                    <input type="text" placeholder="이름" class="desktop" data-input="name" maxlength="6">
+                    <input type="text" placeholder="전화번호" class="desktop" data-input="mobile" maxlength="11">
                     <button data-popupOpen="revenue">투자 수익금 계산</button>
                     <input type="submit" value="1:1 투자상담 신청">
                 </fieldset>
@@ -392,8 +385,8 @@
                         연락처 남겨주시면<br>
                         전문 상담원이 연락 드릴게요!
                     </legend>
-                    <input type="text" placeholder="이름">
-                    <input type="text" placeholder="연락처">
+                    <input type="text" placeholder="이름" class="desktop" data-input="name" maxlength="6">
+                    <input type="text" placeholder="전화번호" class="desktop" data-input="mobile" maxlength="11">
                     <input type="submit" value="빠른상담 신청하기">
                     <a href="">카톡으로 물어보기</a>
                 </fieldset>

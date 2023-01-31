@@ -42,7 +42,7 @@ function sendEmail($receiverName, $toMailAddress, $subject, $contentBody,$attach
         return false;
     }
     return true;
-}
+}  
 
 echo "<script>alert('이메일 보내기 완료');location.replace('index.php');</script>";
 exit;

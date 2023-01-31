@@ -15,15 +15,16 @@
     .topArea > div form fieldset{width: 31.875rem; padding: 2.813rem 1.563rem 1.563rem; box-sizing: border-box; background-color: white; box-shadow: 0.313rem 0.313rem 1.250rem -0.625rem rgba(0, 0, 0, 0.5);}
     .topArea > div form fieldset strong{display: block; font-size: 1.938rem; font-weight: 800; color: #3e3e3e; text-align: center; margin-bottom: 1.875rem;}
     .topArea > div form fieldset strong span{display: block; font-size: 2.625rem; margin-top: 0.625rem;}
-    .topArea > div form fieldset input{width: 100%; height: 3.438rem; border: 1px solid #e4e4e4; box-sizing: border-box; font-size: 1.250rem; font-weight: 700; padding: 0 1.563rem;}
-    .topArea > div form fieldset input:not(:last-of-type){margin-bottom: 0.938rem;}
-    .topArea > div form fieldset input:last-of-type{margin-bottom: 1.250rem;}
+    .topArea > div form fieldset input[type="text"]{width: 100%; height: 3.438rem; box-sizing: border-box; font-size: 1.250rem; font-weight: 700; padding: 0 1.563rem;}
+    .topArea > div form fieldset :where(input[type="text"]){border: 1px solid #e4e4e4;}
+    .topArea > div form fieldset input[type="text"]:first-of-type{margin-bottom: 0.938rem;}
     .topArea > div form fieldset input::placeholder{color: #c4c4c4;}
-    .topArea > div form fieldset a{display: block; font-size: 1.563rem; font-weight: 800; line-height: 4.063rem; text-align: center; border-radius: 1.250rem;}
+    .topArea > div form fieldset :is(a , input[type="submit"]){display: block; font-size: 1.563rem; font-weight: 800; text-align: center; border-radius: 1.250rem;}
+    .topArea > div form fieldset input[type="submit"]{width: 100%; height: 4.063rem; color: #3e3e3e; background-color: transparent; border: 0.125rem solid #16205a; margin-bottom: 0.625rem; margin-top: 1.250rem;}
+    .topArea > div form fieldset a{line-height: 4.063rem;}
     .topArea > div form fieldset a:not(:last-of-type){margin-bottom: 0.625rem;}
-    .topArea > div form fieldset a:nth-of-type(1){color: #3e3e3e; border: 0.125rem solid #16205a;}
-    .topArea > div form fieldset a:nth-of-type(2){background-color: #16205a; color: white;}
-    .topArea > div form fieldset a:nth-of-type(3){background-color: #fae100; color: #3c1d1e;}
+    .topArea > div form fieldset a:nth-of-type(1){background-color: #16205a; color: white;}
+    .topArea > div form fieldset a:nth-of-type(2){background-color: #fae100; color: #3c1d1e;}
 
     /* 메뉴 */
     nav{background-color: #f4f4f4; position: sticky; top: 0; z-index: 100;}
@@ -54,7 +55,7 @@
     .productArea > ol > li > div ol li{font-size: 2.188rem; padding: 3.125rem; border-radius: 10rem; box-shadow: 0.313rem 0.313rem 1.250rem -0.625rem rgba(0, 0, 0, 0.5);}
     .productArea > ol > li > div ol li:not(:last-child){margin-bottom: 2.500rem;}
     .productArea > ol > li.revenueArea div{padding-bottom: 31.250rem; background: url('../images/revenueImg.png') no-repeat center bottom / 85%;}
-    .productArea > ol > li.investArea > div .popupArea{display: flex;}
+    .productArea > ol > li.investArea > div .popupArea{}
     .productArea > ol > li.investArea > div .popupArea > div{padding: 3.438rem 1.250rem 1.250rem;  text-align: center;}
     .productArea > ol > li.investArea > div .popupArea > div fieldset legend{display: block; font-size: 2.188rem; font-weight: 800; color: #05354d; margin-bottom: 1.250rem;}
     .productArea > ol > li.investArea > div .popupArea > div fieldset input[type="text"]{width: 21.250rem; height: 2.625rem; border: 1px solid #a7a7a7; border-radius: 0.625rem; text-align: center; box-sizing: border-box; margin-bottom: 0.938rem;}
@@ -96,14 +97,13 @@
     .productArea > ol > li.uproarArea div{padding-bottom: 26.875rem; background: url('../images/uproarImg.png') no-repeat center bottom / 90%;}
     .productArea .bottomBG{padding: 8.125rem 0; background: url('../images/bottom-bg.png') no-repeat center / cover;}
     .productArea .bottomBG figcaption{max-width: 70.938rem; margin: 0 auto;}
-    .productArea .bottomBG figcaption input{border: none;}
     .productArea .bottomBG figcaption legend{font-size: 3.500rem; font-weight: 800; color: white; margin-bottom: 3.438rem;}
     .productArea .bottomBG figcaption legend small{display: block; font-size: 1.875rem; margin-bottom: 1.250rem;}
     .productArea .bottomBG figcaption ul{display: flex; justify-content: space-between; margin-bottom: 3.125rem;}
     .productArea .bottomBG figcaption ul li{width: 44.5%;}
     .productArea .bottomBG figcaption ul li input{font-size: 1.875rem; font-weight: 700; width: 100%; height: 5.625rem; padding: 0 2.500rem; box-sizing: border-box; border-radius: 10rem;}
     .productArea .bottomBG figcaption ul li input::placeholder{color: rgba(0, 0, 0, 0.7);}
-    .productArea .bottomBG figcaption input[type="submit"]{display: block; font-size: 2.313rem; font-weight: 700; color: white; width: 22.500rem; line-height: 5.000rem; background-color: rgba(0, 0, 0, 0.5); margin: 0 auto; border-radius: 10rem;}
+    .productArea .bottomBG figcaption input[type="submit"]{display: block; border: none; font-size: 2.313rem; font-weight: 700; color: white; width: 22.500rem; line-height: 5.000rem; background-color: rgba(0, 0, 0, 0.5); margin: 0 auto; border-radius: 10rem;}
     .productArea > ol > li.locationArea div h3{margin-bottom: 1.875rem;}
     .productArea > ol > li.locationArea div p{margin-bottom: 3.750rem;}
     .productArea > ol > li.locationArea div iframe{width: 100%;}
