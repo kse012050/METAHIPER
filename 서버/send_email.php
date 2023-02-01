@@ -2,8 +2,11 @@
 require_once "/opt/lampp/htdocs/vendor/autoload.php";
 use PHPMailer\PHPMailer\PHPMailer;
 
+$userName = $_POST['userName'];
+$userMobile = $_POST['userMobile'];
 // sendEmail("이효중","hjlee@team1985.com","메일 테스트","메일 본문", "");
-sendEmail("김성은","kse012050@naver.com","메일 테스트","메일 본문", "");
+sendEmail($userName,"kse012050@naver.com",$userName.$userMobile , '이름 : '.$userName.'<br>전화번호 : '.$userMobile, "");
+// sendEmail("탄소","kse012050@naver.com",$userName, $userMobile ,$userName + " " + $userMobile, "");
 function sendEmail($receiverName, $toMailAddress, $subject, $contentBody,$attachFilePath)
 {
     ////-----    이메일 발송   --------  ////
@@ -22,7 +25,7 @@ function sendEmail($receiverName, $toMailAddress, $subject, $contentBody,$attach
         $mail->SMTPAuth = true;
         $mail->Username = "tlseeod"; // 네이버 아이디
         $mail->Password = "yesly_1122"; // 네이버 비밀번호
-        $mail->setFrom('tlseeod@naver.com', '탄소');
+        $mail->setFrom('tlseeod@naver.com', $receiverName);
 
 
         if(is_array($toMailAddress) && count($toMailAddress)>0){
@@ -30,7 +33,7 @@ function sendEmail($receiverName, $toMailAddress, $subject, $contentBody,$attach
                 $mail->addAddress($addressInfo["EMAIL"]);
             }
         }else{
-            $mail->addAddress($toMailAddress, $receiverName);
+            $mail->addAddress($toMailAddress, '탄소 <'.$toMailAddress.'>');
         }
 
         $mail->Subject = $subject;
@@ -44,5 +47,6 @@ function sendEmail($receiverName, $toMailAddress, $subject, $contentBody,$attach
     return true;
 }  
 
-echo "<script>alert('이메일 보내기 완료');location.replace('index.php');</script>";
+// echo "<script>alert('이메일 보내기 완료');location.replace('index.php');</script>";
+// echo $test;
 exit;

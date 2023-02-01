@@ -49,8 +49,27 @@ $(document).ready(function(){
             (!isInput && $(input).hasClass('error')) && (isInput = true);
         })
         $(this).closest('form').find('[data-input].error').first().focus();
+
         if(!isInput){
-            alert('확인');
+            let form = $(this).closest('form')[0];
+            let formData = new FormData(form);
+            console.log(form);
+            console.log(formData);
+            $.ajax({
+                contentType: false,       // The content type used when sending data to the server.
+                cache: false,             // To unable request pages to be cached
+                processData: false,        // To send DOMDocument or non processed data file it is set to false
+                type: "POST",
+                url: '../send_email.php',
+                data: formData,
+                error: function (request, textStatus, errorThrown) {
+                    // alert(textStatus);
+                    alert("code:" + request.status + "\n" + "message:" + request.responseText + "\n" + "error:" + errorThrown);
+                },
+                success : function(){
+                    console.log('성공');
+                }
+            })
         }
     })
 })

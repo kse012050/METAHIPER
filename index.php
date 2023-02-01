@@ -56,8 +56,8 @@
                         1:1 빠른 간편상담
                         <span><mark class="green">CRM투자상품</mark> 상담신청</span>
                     </strong>
-                    <input type="text" placeholder="이름" data-input="name" maxlength="6">
-                    <input type="text" placeholder="전화번호" data-input="mobile" maxlength="11">
+                    <input type="text" placeholder="이름" data-input="name" name="userName" maxlength="6">
+                    <input type="text" placeholder="전화번호" data-input="mobile" name="userMobile" maxlength="11">
                     <input type="submit" value="1:1 투자상담 예약">
                     <a href="tel:+8216681340">바로 전화상담 1668-1340</a>
                     <a href="http://pf.kakao.com/_zTKrxj/chat">카카오톡 간편상담</a>
@@ -304,10 +304,10 @@
                     </legend>
                     <ul>
                         <li>
-                            <input type="text" placeholder="이름" data-input="name" maxlength="6">
+                            <input type="text" placeholder="이름" data-input="name" name="userName" maxlength="6">
                         </li>
                         <li>
-                            <input type="text" placeholder="전화번호" data-input="mobile" maxlength="11">
+                            <input type="text" placeholder="전화번호" data-input="mobile" name="userMobile" maxlength="11">
                         </li>
                     </ul>
                     <input type="submit" value="상담 예약하기" data-popup="">
@@ -368,8 +368,8 @@
         <div class="contentSize">
             <form>
                 <fieldset>
-                    <input type="text" placeholder="이름" class="desktop" data-input="name" maxlength="6">
-                    <input type="text" placeholder="전화번호" class="desktop" data-input="mobile" maxlength="11">
+                    <input type="text" placeholder="이름" class="desktop" data-input="name" name="userName" maxlength="6">
+                    <input type="text" placeholder="전화번호" class="desktop" data-input="mobile" name="userMobile" maxlength="11">
                     <button data-popupOpen="revenue">투자 수익금 계산</button>
                     <input type="submit" value="1:1 투자상담 신청">
                 </fieldset>
@@ -385,8 +385,8 @@
                         연락처 남겨주시면<br>
                         전문 상담원이 연락 드릴게요!
                     </legend>
-                    <input type="text" placeholder="이름" class="desktop" data-input="name" maxlength="6">
-                    <input type="text" placeholder="전화번호" class="desktop" data-input="mobile" maxlength="11">
+                    <input type="text" placeholder="이름" class="desktop" data-input="name" name="userName" maxlength="6">
+                    <input type="text" placeholder="전화번호" class="desktop" data-input="mobile" name="userMobile" maxlength="11">
                     <input type="submit" value="빠른상담 신청하기">
                     <a href="">카톡으로 물어보기</a>
                 </fieldset>
