@@ -12,7 +12,8 @@
 
     /* 팝업 */
     .popupArea{display: none; justify-content: center; align-items: center; position: fixed; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.8); z-index: 1000;}
-    .popupArea > div{background-color: white; border-radius: 1.250rem;}
+    .popupArea > div{background-color: white; border-radius: 1.250rem; position: relative;}
+    .popupArea > div > span{position: absolute; right: 1rem; top: 1rem; font-size: 2rem; cursor: pointer;}
     
     /* 해더 */
     header{background-color: white; padding: 0.938rem 0; text-align: center;}
@@ -28,7 +29,7 @@
     .bottomFix fieldset input[type="submit"]{background-color: #192264; color: white; border: none;}
     
     /* 푸터 */
-    footer{background: url('../images/footer-bg.png') no-repeat center / cover;}
+    footer{background: url('../images/footer-bg.png') no-repeat center / cover; margin-bottom: 8.125rem;}
     footer > div{padding: 5.000rem 0; position: relative;}
     footer > div img{position: absolute; width: 6.688rem; right: 1.875rem; bottom: 1.875rem;}
     footer > div address p{font-size: 0.813rem; font-weight: 800; color: #fff; line-height: 1.375rem; }
@@ -60,10 +61,14 @@
     nav ul li.active a{background-color: white; border-top: 1px solid #0a4b09;}
 
     /* 투자 상품 */
-    .productArea > .topBG{padding: 4.375rem 0; background: url('../images/top-bg.png') no-repeat center / cover; text-align: center; color: white;}
-    .productArea > .topBG .titleSwiper{padding: 0.313rem 0;}
+    .productArea > .topBG{background: url('../images/top-bg.png') no-repeat center / cover; text-align: center; color: white;}
+    .productArea > .topBG .titleSwiper{padding: 4.375rem 0;}
     .productArea > .topBG .titleSwiper h2{font-size: 1.875rem; font-weight: 700; margin-bottom: 1.250rem;}
     .productArea > .topBG .titleSwiper p{font-size: 1.000rem; font-weight: 500; line-height: 1.313rem;}
+    .productArea > .topBG :is(.swiper-button-next, .swiper-button-prev){color: white;}
+    .productArea > .topBG :is(.swiper-button-next, .swiper-button-prev)::after{font-size: 2rem;}
+    .productArea > .topBG .swiper-pagination{bottom: 1rem;}
+    .productArea > .topBG .swiper-pagination-bullet{width: 0.5rem; height: 0.5rem; background-color: white;}
     .productArea > ol > li{padding: 3.125rem 0; font-weight: 800; color: #2c2c2c; counter-increment: productList;}
     .productArea > ol > li:not(:last-child){border-bottom: 1px solid #434343;}
     .productArea > ol > li mark.brown{color: #7a3415;}

@@ -34,10 +34,14 @@
     nav ul li.active a{background-color: white; border-top: 1px solid #0a4b09;}
 
     /* 투자 상품 */
-    .productArea > .topBG{padding: 10.625rem 0; background: url('../images/top-bg.png') no-repeat center / cover; text-align: center; color: white;}
-    .productArea > .topBG .titleSwiper{padding: 0.313rem;}
+    .productArea > .topBG{background: url('../images/top-bg.png') no-repeat center / cover; text-align: center; color: white;}
+    .productArea > .topBG .titleSwiper{padding: 10.625rem 0;}
     .productArea > .topBG h2{font-size: 4.688rem; font-weight: 700; margin-bottom: 3.750rem;}
     .productArea > .topBG p{font-size: 2.375rem; font-weight: 500; line-height: 3.125rem;}
+    .productArea > .topBG :is(.swiper-button-next, .swiper-button-prev){color: white;}
+    .productArea > .topBG :is(.swiper-button-next, .swiper-button-prev)::after{font-size: 2.813rem;}
+    .productArea > .topBG .swiper-pagination{bottom: 2.500rem;}
+    .productArea > .topBG .swiper-pagination-bullet{width: 0.813rem; height: 0.813rem; background-color: white;}
     .productArea > ol > li{padding: 8.750rem 0; font-weight: 800; color: #2c2c2c; counter-increment: productList;}
     .productArea > ol > li:not(:last-child){border-bottom: 1px solid #434343;}
     .productArea > ol > li mark.brown{color: #7a3415;}

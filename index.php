@@ -6,10 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0 ,maximum-scale=1.0, user-scalable=0">
     <!-- Iphone 모바일 확대 방지  maximum-scale=1.0, user-scalable=0-->
     <title>METAHIPER</title> 
+    <!-- google icon -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!-- css -->
     <link rel="stylesheet" href="css/import.css">
+    <!-- swiper css -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <!-- swiper js -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!-- js -->
     <script src="js/common.js"></script>
 </head>
 <body>
@@ -74,43 +81,42 @@
     </nav>
     <section class="productArea">
         <div class="topBG" data-scroll="invest">
-            <div class="swiper titleSwiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <h2>탄소배출권 투자상품</h2>
-                        <p>
-                            페루 아마존 청정지역을 35년동안 임대 계약하여<br>
-                            산림 황폐화를 최소화 하고 이에 제공되는 탄소배출권으로<br>
-                            수익을 보장받는 투자 상품입니다.
-                        </p>
+            <div class="contentSize">
+                <div class="swiper titleSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <h2>탄소배출권 투자상품</h2>
+                            <p>
+                                페루 아마존 청정지역을 35년동안 임대 계약하여<br>
+                                산림 황폐화를 최소화 하고 이에 제공되는 탄소배출권으로<br>
+                                수익을 보장받는 투자 상품입니다.
+                            </p>
+                        </div>
+                        <div class="swiper-slide">
+                            <h2>아마존 임대하고 분기별로 월세 받자!</h2>
+                            <p>
+                                페루 아마존 청정지역을 35년동안 임대 계약하여<br>
+                                지급받는 탄소배출권으로 매년 투자금의 15%<br>
+                                수익을 내는 투자상품입니다.
+                            </p>
+                        </div>
+                        <div class="swiper-slide">
+                            <h2>연 이율 15% 안전한 수익형 투자상품</h2>
+                            <p>
+                                탄소배출권 투자상품은 원금 100% 보장되고<br>
+                                매년 15% 수익을 챙길 수 있는<br>
+                                안전한 적금형 투자상품 입니다.
+                            </p>
+                        </div>
+                        <div class="swiper-slide">
+                            네번째
+                        </div>
                     </div>
-                    <div class="swiper-slide">
-                        <h2>아마존 임대하고 분기별로 월세 받자!</h2>
-                        <p>
-                            페루 아마존 청정지역을 35년동안 임대 계약하여<br>
-                            지급받는 탄소배출권으로 매년 투자금의 15%<br>
-                            수익을 내는 투자상품입니다.
-                        </p>
-                    </div>
-                    <div class="swiper-slide">
-                        <h2>연 이율 15% 안전한 수익형 투자상품</h2>
-                        <p>
-                            탄소배출권 투자상품은 원금 100% 보장되고<br>
-                            매년 15% 수익을 챙길 수 있는<br>
-                            안전한 적금형 투자상품 입니다.
-                        </p>
-                    </div>
-                    <div class="swiper-slide">
-                        네번째
-                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
                 </div>
             </div>
-            <!-- <h2>탄소배출권 투자상품</h2>
-            <p>
-                페루 아마존 청정지역을 35년동안 임대 계약하여<br>
-                산림 황폐화를 최소화 하고 이에 제공되는 탄소배출권으로<br>
-                수익을 보장받는 투자 상품입니다.
-            </p> -->
         </div>
         <ol class="contentSize">
             <li class="revenueArea">
@@ -165,6 +171,9 @@
                                     <input type="submit" value="간편 상담 신청">
                                 </fieldset>
                             </form>
+                            <span class="material-symbols-outlined">
+                                close
+                            </span>
                         </div>
                     </div>
                 </div>
@@ -371,7 +380,7 @@
                     <input type="text" placeholder="이름" class="desktop" data-input="name" name="userName" maxlength="6">
                     <input type="text" placeholder="전화번호" class="desktop" data-input="mobile" name="userMobile" maxlength="11">
                     <button data-popupOpen="revenue">투자 수익금 계산</button>
-                    <input type="submit" value="1:1 투자상담 신청">
+                    <input type="submit" value="1:1 투자상담 신청" class="mobilePopup">
                 </fieldset>
             </form>
         </div>
@@ -388,9 +397,12 @@
                     <input type="text" placeholder="이름" class="desktop" data-input="name" name="userName" maxlength="6">
                     <input type="text" placeholder="전화번호" class="desktop" data-input="mobile" name="userMobile" maxlength="11">
                     <input type="submit" value="빠른상담 신청하기">
-                    <a href="">카톡으로 물어보기</a>
+                    <a href="http://pf.kakao.com/_zTKrxj/chat">카톡으로 물어보기</a>
                 </fieldset>
             </form>
+            <span class="material-symbols-outlined">
+                close
+            </span>
         </div>
     </div>
 
@@ -402,6 +414,9 @@
                 곧 연락 드리겠습니다. 
             </p>
             <img src="images/logo.png" alt="">
+            <span class="material-symbols-outlined">
+                close
+            </span>
         </div>
     </div>
 

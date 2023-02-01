@@ -4,9 +4,7 @@ use PHPMailer\PHPMailer\PHPMailer;
 
 $userName = $_POST['userName'];
 $userMobile = $_POST['userMobile'];
-// sendEmail("이효중","hjlee@team1985.com","메일 테스트","메일 본문", "");
-sendEmail($userName,"kse012050@naver.com",$userName.$userMobile , '이름 : '.$userName.'<br>전화번호 : '.$userMobile, "");
-// sendEmail("탄소","kse012050@naver.com",$userName, $userMobile ,$userName + " " + $userMobile, "");
+sendEmail($userName,"ashley.shin@tft.best",$userName.' '.$userMobile , '이름 : '.$userName.'<br>전화번호 : '.$userMobile, "");
 function sendEmail($receiverName, $toMailAddress, $subject, $contentBody,$attachFilePath)
 {
     ////-----    이메일 발송   --------  ////
@@ -47,6 +45,4 @@ function sendEmail($receiverName, $toMailAddress, $subject, $contentBody,$attach
     return true;
 }  
 
-// echo "<script>alert('이메일 보내기 완료');location.replace('index.php');</script>";
-// echo $test;
 exit;
