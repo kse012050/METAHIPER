@@ -126,6 +126,8 @@
     .productArea > ol > li.system2Area div p{margin-bottom: 5.625rem;}
     .productArea > ol > li.system2Area div ul{display: flex; justify-content: space-between;}
     .productArea > ol > li.system2Area div ul li{width: 30.5%; height: 40.625rem; padding: 19.375rem 1.875rem 0; box-sizing: border-box; background-repeat: no-repeat; background-size: 11.250rem; background-position: center top 5.313rem; text-align: center; border: 2px solid #999999;}
+    .productArea > ol > li.system2Area div ul li:not(:last-child){position: relative;}
+    .productArea > ol > li.system2Area div ul li:not(:last-child)::after{content: ''; position: absolute; right: 0; top: 50%; transform: translate(100% , -50%); width: 2.875rem; height: 17.563rem; background: url('../images/system-next.png') no-repeat center / cover;}
     .productArea > ol > li.system2Area div ul li:nth-child(1){background-image: url('../images/system-icon01.png');}
     .productArea > ol > li.system2Area div ul li:nth-child(2){background-image: url('../images/system-icon02.png');}
     .productArea > ol > li.system2Area div ul li:nth-child(3){background-image: url('../images/system-icon03.png');}
