@@ -41,7 +41,8 @@ footer{font-family: 'Nanum Gothic', serif;}
 .productArea > ol > li.certificationArea > div div,
 .productArea .centerBG,
 .oldAge > div h2,
-.planArea{font-family: 'GmarketSansMedium';}
+.planArea,
+.system2Area div ul li{font-family: 'GmarketSansMedium';}
 
 /* 포인트 색상 */
 mark.green{color: #56a54d;}
