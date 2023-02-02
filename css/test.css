@@ -1,0 +1,14 @@
+/* 노후준비 */
+.oldAge::before{content: ''; display: block; padding-top: 945px; background: url('../images/oldAge-title.png') no-repeat center / cover;}
+.oldAge > div{background: url('../images/oldAge-bg.png') no-repeat center / cover; padding: 105px 75px 75px; text-align: center;}
+.oldAge > div h2{font-size: 46px; font-weight: 500; color: rgba(255, 255, 255, 0.7); margin-bottom: 50px;}
+.oldAge > div h2 strong{display: block; font-size: 82px; font-weight: 700; color: white;  margin-top: 25px;}
+.oldAge > div div{background-color: rgba(255, 255, 255, 0.95); font-size: 36px; padding: 60px 0 35px;}
+.oldAge > div div ul{display: flex; justify-content: center; margin-bottom: 30px;}
+.oldAge > div div ul li{width: 420px; font-weight: 800; padding-top: 185px; background-repeat: no-repeat; background-position: center top; background-size: 167px;}
+.oldAge > div div ul li:nth-child(1){background-image: url('../images/oldAge-icon01.png');}
+.oldAge > div div ul li:nth-child(2){background-image: url('../images/oldAge-icon02.png');}
+.oldAge > div div ul li:nth-child(3){background-image: url('../images/oldAge-icon03.png');}
+.oldAge > div div ul li:not(:last-child){position: relative;}
+.oldAge > div div ul li:not(:last-child)::after{content: ''; position: absolute; right: 0; top: 10px; width: 6px; height: 180px; transform: translateX(-50%); background-color: #a6ac92; border-radius: 50px;}
+.oldAge > div div p{font-weight: 400; line-height: 52px; color: #3c3c3c;}

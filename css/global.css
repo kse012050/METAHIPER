@@ -21,31 +21,36 @@
 }
 
  /* 나눔고딕 */
- .topArea > div .leftArea h2 ,
- .topArea > div .leftArea ul li,
- .topArea > div form fieldset strong,
- .topArea > div form fieldset input,
- .productArea > ol > li,
- .productArea .bottomBG,
- .popupArea > div fieldset,
- .popupArea.applicationArea > div fieldset,
- .popupArea.applicationComplete
- footer{font-family: 'Nanum Gothic', serif;}
+.topArea > div .leftArea h2 ,
+.topArea > div .leftArea ul li,
+.topArea > div form fieldset strong,
+.topArea > div form fieldset input,
+.productArea > ol > li,
+.productArea .bottomBG,
+.popupArea > div fieldset,
+.popupArea.applicationArea > div fieldset,
+.popupArea.applicationComplete,
+.oldAge > div div ,
+footer{font-family: 'Nanum Gothic', serif;}
 
- /* SBAggroB */
- .topArea > div .leftArea .textBox p{font-family: 'SBAggroB';}
+/* SBAggroB */
+.topArea > div .leftArea .textBox p{font-family: 'SBAggroB';}
 
- /* GmarketSansMedium */
- .productArea > div,
- .productArea > ol > li.certificationArea > div div,
- .productArea .centerBG{font-family: 'GmarketSansMedium';}
+/* GmarketSansMedium */
+.productArea > div,
+.productArea > ol > li.certificationArea > div div,
+.productArea .centerBG,
+.oldAge > div h2{font-family: 'GmarketSansMedium';}
 
- /* 포인트 색상 */
- mark.green{color: #56a54d;}
- mark.blue{color: #16205a;}
+/* 포인트 색상 */
+mark.green{color: #56a54d;}
+mark.blue{color: #16205a;}
+mark.brown{color: #7a3415;}
+mark.brown2{color: #8b2d03;}
+mark.brown3{color: #b25400;}
 
- input[type="text"]{border: 2px solid #e3e3e3; box-sizing: border-box;}
- input[type="text"].error{border: 2px solid red; outline-color: red; border-radius: 5px;}
+input[type="text"]{border: 2px solid #e3e3e3; box-sizing: border-box;}
+input[type="text"].error{border: 2px solid red; outline-color: red; border-radius: 5px;}
 
 @media screen and (min-width : 1101px) {
     @media screen and (min-width : 1241px) {

@@ -44,8 +44,6 @@
     .productArea > .topBG .swiper-pagination-bullet{width: 0.813rem; height: 0.813rem; background-color: white;}
     .productArea > ol > li{padding: 8.750rem 0; font-weight: 800; color: #2c2c2c; counter-increment: productList;}
     .productArea > ol > li:not(:last-child){border-bottom: 1px solid #434343;}
-    .productArea > ol > li mark.brown{color: #7a3415;}
-    .productArea > ol > li mark.brown2{color: #8b2d03;}
     .productArea > ol > li mark.green{color: #0a4b09;}
     .productArea > ol > li h3{font-size: 3.188rem; line-height: 4.250rem;}
     .productArea > ol > li > div > :is(ul , mark , p){font-size: 1.750rem; line-height: 2.500rem;}
