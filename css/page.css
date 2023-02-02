@@ -131,7 +131,7 @@
     .productArea > ol > li.system2Area div ul li:nth-child(1){background-image: url('../images/system-icon01.png');}
     .productArea > ol > li.system2Area div ul li:nth-child(2){background-image: url('../images/system-icon02.png');}
     .productArea > ol > li.system2Area div ul li:nth-child(3){background-image: url('../images/system-icon03.png');}
-    .productArea > ol > li.system2Area div ul li mark{display: block; font-size: 2.750rem; font-weight: 500; color: #32460c; line-height: 1; padding: 1.875rem 0; border-top: 2px solid #bababa;}
+    .productArea > ol > li.system2Area div ul li mark{display: block; font-size: 2.750rem; font-weight: 700; color: #32460c; line-height: 1; padding: 1.875rem 0; border-top: 2px solid #bababa;}
     .productArea > ol > li.system2Area div ul li p{font-size: 1.750rem; line-height: 2.500rem; font-weight: 500;}
 
     .productArea .centerBG{font-weight: 700; text-align: center; padding: 15.625rem 0; background: url('../images/center-bg.png') no-repeat center / cover;}
