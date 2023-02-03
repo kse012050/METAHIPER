@@ -1,0 +1,41 @@
+    /* 노후준비 */
+    .oldAge{width: 100%; margin-bottom: 4.375rem;}
+    .oldAge::before{content: ''; display: block; padding-top: 30rem ; background: url('../images/oldAge-title.png') no-repeat center / 100%;}
+    .oldAge > div{background: url('../images/oldAge-bg.png') no-repeat center / cover; padding: 3.125rem 2.188rem 2.188rem; text-align: center;}
+    .oldAge > div h2{font-size: 1.313rem; font-weight: 500; color: rgba(255, 255, 255, 0.7); margin-bottom: 1.563rem;}
+    .oldAge > div h2 strong{display: block; font-size: 2.375rem; font-weight: 700; color: white;  margin-top: 0.625rem;}
+    .oldAge > div div{background-color: rgba(255, 255, 255, 0.95); font-size: 1.063rem; padding: 1.563rem 0 1.250rem;}
+    .oldAge > div div ul{display: flex; justify-content: center; margin-bottom: 0.938rem;}
+    .oldAge > div div ul li{width: 12.188rem; font-weight: 800; padding-top: 5.625rem; background-repeat: no-repeat; background-position: center top; background-size: 5.000rem;}
+    .oldAge > div div ul li:nth-child(1){background-image: url('../images/oldAge-icon01.png');}
+    .oldAge > div div ul li:nth-child(2){background-image: url('../images/oldAge-icon02.png');}
+    .oldAge > div div ul li:nth-child(3){background-image: url('../images/oldAge-icon03.png');}
+    .oldAge > div div ul li:not(:last-child){position: relative;}
+    .oldAge > div div ul li:not(:last-child)::after{content: ''; position: absolute; right: 0; top: 0.625rem ; width: 0.375rem ; height: 5.625rem; transform: translateX(-50%); background-color: #a6ac92; border-radius: 3.125rem ;}
+    .oldAge > div div p{font-weight: 400; line-height: 1.500rem; color: #3c3c3c;}
+
+    /* 은퇴계획 */
+    .planArea{text-align: center; color: #3e3e3e; margin-bottom: 4.375rem;}
+    .planArea > a{width: 13.125rem; line-height: 2.813rem; font-size: 1.125rem; font-weight: 500; border: 1px solid #383838; border-radius: 6.250rem ; margin-bottom: 1.563rem;}
+    .planArea h2{font-size: 2.625rem; font-weight: 700; line-height: 3.250rem; margin-bottom: 1.875rem;}
+    .planArea h2 mark:first-child{color: #0a4b09;}
+    .planArea h2 mark:last-child{color: #ce570f;}
+    .planArea ul li{height: 0.1px; overflow: hidden; text-indent: -9999px; background-repeat: no-repeat; background-size: 100%;}
+    .planArea ul li:not(:last-child){padding-bottom: 33%; box-shadow: 0.625rem  0.625rem  1.250rem  0.313rem  rgba(0, 0, 0, 0.15); margin-bottom: 1.875rem;}
+    .planArea ul li:last-child{padding-bottom: 37%; box-shadow: 0.313rem  0.313rem  0.938rem  0.313rem  rgba(5, 125, 218, 0.5);}
+    .planArea ul li:nth-child(1){background-image: url('../images/m-plan-img01.png');}
+    .planArea ul li:nth-child(2){background-image: url('../images/m-plan-img02.png');}
+    .planArea ul li:nth-child(3){background-image: url('../images/m-plan-img03.png');}
+
+    .productArea > ol > li[class*="system"] h3{margin-bottom: 0.938rem;}
+    .productArea > ol > li[class*="system"] div p{font-weight: 600;}
+    .productArea > ol > li.systemArea div{padding-bottom: calc(54.5% + 1.875em); background: url('../images/system-img.png') no-repeat center bottom / 100%;}
+    .productArea > ol > li.system2Area div > p{margin-bottom: 2.813rem; padding: 0;}
+    .productArea > ol > li.system2Area div ul li{padding: 2.500rem 2.500rem 2.500rem 10.625rem; box-sizing: border-box; background-repeat: no-repeat; background-size: 5.000rem; background-position: left 2.813rem center; border: 2px solid #999999;}
+    .productArea > ol > li.system2Area div ul li:not(:last-child){position: relative; margin-bottom: 3.125rem;}
+    .productArea > ol > li.system2Area div ul li:not(:last-child)::after{content: ''; position: absolute; left: 50%; bottom: 0; width: 6.563rem; height: 1.125rem; transform: translate(-50% , 100%); background: url('../images/m-system-next.png') no-repeat center / cover;}
+    .productArea > ol > li.system2Area div ul li:nth-child(1){background-image: url('../images/system-icon01.png');}
+    .productArea > ol > li.system2Area div ul li:nth-child(2){background-image: url('../images/system-icon02.png');}
+    .productArea > ol > li.system2Area div ul li:nth-child(3){background-image: url('../images/system-icon03.png');}
+    .productArea > ol > li.system2Area div ul li mark{display: block; font-size: 1.438rem; font-weight: 700; color: #32460c; line-height: 1; padding-bottom: 0.625rem; border-bottom: 2px solid #bababa; margin-bottom: 0.625rem;}
+    .productArea > ol > li.system2Area div ul li p{font-size: 1.063rem; line-height: 1.438rem; font-weight: 500;}
