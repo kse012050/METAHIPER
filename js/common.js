@@ -117,14 +117,31 @@ function proceedsInput(){
     $('#proceeds').on('input keydoun',function(e){
         this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');
         let value = this.value;
-        let valueLength = this.value.length;
         if(value === ''){return}
-        $(this).val(value + '만원');
-        const result = Number(value) * 1000000;
-        $('#proceeds').selectRange(valueLength );
-        $('[data-proceeds="year"]').html((result * 0.15).toLocaleString())
-        $('[data-proceeds="month"]').html((result * 0.15 / 12).toLocaleString())
-        $('[data-proceeds="total"]').html((result * 0.15 * 35).toLocaleString())
+        proceedsValue(value)
+    })
+
+    $('[data-revenue]').click(function(e){
+        e.preventDefault();
+        const value = Number($(this).attr('data-revenue'));
+        proceedsValue(value)
+    })
+
+    function proceedsValue(value){
+        const result = Number(value);
+        let valueLength = value.length;
+        $('#proceeds').val(value + '만원');
+        $('#proceeds').selectRange(valueLength);
+        $('[data-proceeds="year"]').html(Math.round((result * 0.15) * 100) / 100 + '만원')
+        $('[data-proceeds="month"]').html(Math.round((result * 0.15 / 12) * 100) / 100 + '만원')
+        $('[data-proceeds="total"]').html(Math.round((result * 0.15 * 35) * 100) / 100 + '만원')
+    }
+
+    $('.simpleConsulting').click(function(e){
+        e.preventDefault();
+        $(this).closest('.popupArea').fadeOut();
+        $('body').removeAttr('style')
+        $('html').animate({scrollTop : $(`[data-scroll="consulting"]`).offset().top - ($(window).height() / 2) + ($(`[data-scroll="consulting"]`).innerHeight() / 2)})
     })
 }
 
@@ -148,7 +165,7 @@ function inputEvent(){
         this.value.length < maxLength ? $(this).addClass('error') : $(this).removeClass('error');
     })
 
-    $('input[type="submit"]').click(function(e){
+    $('input[type="submit"].sendBtn').click(function(e){
         e.preventDefault();
         if($(window).width() <= 1100 && $(this).hasClass('mobilePopup')){
             e.preventDefault();

@@ -91,5 +91,5 @@ input[type="text"].error{border: 2px solid red; outline-color: red; border-radiu
     footer{padding: 10.000rem 0; background: url('../images/footer-bg.png') no-repeat center / cover; margin-bottom: 6.875rem;}
     footer > div{display: flex; align-items: center;}
     footer > div img{flex-shrink: 0; width: 13.125rem; margin-right: 6.250rem;}
-    footer > div address p{font-size: 1.625rem; font-weight: 800; color: #fff; line-height: 2.813rem; }
+    footer > div address p{font-size: 1.625rem; font-weight: 700; color: #fff; line-height: 2.813rem; }
 }

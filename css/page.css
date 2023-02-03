@@ -77,22 +77,26 @@
     .productArea > ol > li:not(:last-child){border-bottom: 1px solid #434343;}
     .productArea > ol > li mark.green{color: #0a4b09;}
     .productArea > ol > li h3{font-size: 3.188rem; line-height: 4.250rem;}
-    .productArea > ol > li > div > :is(ul , mark , p){font-size: 1.750rem; line-height: 2.500rem;}
+    .productArea > ol > li > div > :is(ul , mark , p){font-size: 1.750rem; line-height: 2.500rem; font-weight: 700;}
     .productArea > ol > li > div > span{display: inline-block; margin-bottom: 1.875rem; position: relative;}
     .productArea > ol > li > div > span::before{content: '0' counter(productList); font-size: 6.563rem; font-weight: 700;}
     .productArea > ol > li > div > span::after{content: ''; position: absolute; left: 0; bottom: 0; width: 100%; height: 2.813rem; background-color: #f6ff00; z-index: -1;}
-    .productArea > ol > li > div ul{margin-top: 1.250rem;}
+    .productArea > ol > li > div ul{font-weight: 700; margin-top: 1.250rem;}
     .productArea > ol > li > div ul + mark{display: block; margin-top: 2.188rem;}
-    .productArea > ol > li > div :is(button , a) {margin: 0 3.750rem; width: 25.000rem; line-height: 5.313rem; font-size: 1.875rem; font-weight: 800; color: white; text-align: center; border-radius: 1.250rem; background-color: #16205a; margin-top: 1.875rem;}
+    .productArea > ol > li > div > :is(button , a) {margin: 0 3.750rem; width: 25.000rem; line-height: 5.313rem; font-size: 1.875rem; font-weight: 800; color: white; text-align: center; border-radius: 1.250rem; background-color: #16205a; margin-top: 1.875rem;}
     .productArea > ol > li > div ol{margin-top: 4.375rem;}
     .productArea > ol > li > div ol li{font-size: 2.188rem; padding: 3.125rem; border-radius: 10rem; box-shadow: 0.313rem 0.313rem 1.250rem -0.625rem rgba(0, 0, 0, 0.5);}
     .productArea > ol > li > div ol li:not(:last-child){margin-bottom: 2.500rem;}
     .productArea > ol > li.revenueArea div{padding-bottom: 31.250rem; background: url('../images/revenueImg.png') no-repeat center bottom / 85%;}
-    .productArea > ol > li.investArea > div .popupArea{}
+    /* .productArea > ol > li.investArea > div .popupArea{display: flex;} */
+    .productArea > ol > li.investArea > div{padding: 5rem 55% 5rem 0; background: url('../images/investImg.png') no-repeat right center / 50%}
     .productArea > ol > li.investArea > div .popupArea > div{padding: 3.438rem 1.250rem 1.250rem;  text-align: center;}
     .productArea > ol > li.investArea > div .popupArea > div fieldset legend{display: block; font-size: 2.188rem; font-weight: 800; color: #05354d; margin-bottom: 1.250rem;}
     .productArea > ol > li.investArea > div .popupArea > div fieldset input[type="text"]{width: 21.250rem; height: 2.625rem; border: 1px solid #a7a7a7; border-radius: 0.625rem; text-align: center; box-sizing: border-box; margin-bottom: 0.938rem;}
     .productArea > ol > li.investArea > div .popupArea > div fieldset input[type="text"]::placeholder{color: #555555;}
+    .productArea > ol > li.investArea > div .popupArea > div fieldset div{display: flex; justify-content: center; margin-bottom: 0.938rem;}
+    .productArea > ol > li.investArea > div .popupArea > div fieldset div button{width: 6rem; line-height: 2rem; font-size: 1rem; font-weight: 600; color: white; text-align: center; border-radius: 1.250rem; background-color: #16205a;}
+    .productArea > ol > li.investArea > div .popupArea > div fieldset div button:not(:last-child){margin-right: 0.313rem;}
     .productArea > ol > li.investArea > div .popupArea > div fieldset table{width: 21.250rem; margin: 0 auto 1.250rem;}
     .productArea > ol > li.investArea > div .popupArea > div fieldset table tr{font-size: 1.250rem; line-height: 3.438rem; font-weight: 700;}
     .productArea > ol > li.investArea > div .popupArea > div fieldset table tbody tr{color: #555555; border-bottom: 0.125rem solid #e6e6e6;}
@@ -119,7 +123,7 @@
     .productArea > ol > li.contractArea > div ul{display: flex; justify-content: space-between;}
     .productArea > ol > li.contractArea > div ul li{width: 23%; height: 41.000rem; display: flex; flex-direction: column; justify-content: space-between;}
     .productArea > ol > li.contractArea > div ul li img{width: 100%;}
-    .productArea > ol > li.contractArea > div ul li span{display: block; font-size: 1.250rem; text-align: center; line-height: 4.688rem; border: 0.125rem solid #a3a3a3; border-radius: 10rem;}
+    .productArea > ol > li.contractArea > div ul li span{display: block; font-size: 1.375rem; text-align: center; line-height: 4.688rem; border: 0.125rem solid #a3a3a3; border-radius: 10rem;}
     .productArea > ol > li[class*="system"] h3{margin-bottom: 1.875rem;}
     .productArea > ol > li[class*="system"] div p{font-weight: 600;}
     .productArea > ol > li.systemArea div{padding-bottom: calc(54.5% + 5.000em); background: url('../images/system-img.png') no-repeat center bottom / 100%;}
@@ -136,7 +140,7 @@
 
     .productArea .centerBG{font-weight: 700; text-align: center; padding: 15.625rem 0; background: url('../images/center-bg.png') no-repeat center / cover;}
     .productArea .centerBG mark{display: block; font-size: 7.500rem; color: #ffed55; margin-bottom: 1.875rem;}
-    .productArea .centerBG p{font-size: 1.688rem; color: white; line-height: 2.938rem; max-width: 37.500rem; margin: 0 auto;}
+    .productArea .centerBG p{font-size: 1.688rem; font-weight: 500; color: white; line-height: 2.938rem; max-width: 37.500rem; margin: 0 auto;}
     .productArea > ol > li.carbonArea{background: url('../images/carbonImg.png') no-repeat right top 2.500rem / 46.78%;}
     .productArea > ol > li.carbonArea div{padding-bottom: 10.000rem;}
     .productArea > ol > li.carbonArea div ul{line-height: 3.438rem;}
@@ -158,7 +162,6 @@
     .productArea > ol > li.locationArea div dl dt{padding: 0 3.125rem; width: 16.563rem;}
 
     /* 신청 팝업 */
-    .popupArea.applicationArea{}
     .popupArea.applicationArea > div{padding: 2.813rem 2.500rem 2.500rem;}
     .popupArea.applicationArea > div fieldset{text-align: center;}
     .popupArea.applicationArea > div fieldset legend{font-size: 1.875rem; line-height: 2.500rem; font-weight: 800; color: #05354d; margin-bottom: 1.250rem;}
@@ -169,7 +172,6 @@
     .popupArea.applicationArea > div fieldset a{background-color: #f9e000; color: #371c1d;}
 
     /* 신청 완료 팝업 */
-    .popupArea.applicationComplete{}
     .popupArea.applicationComplete > div{width: 28.750rem; height: 29.375rem; display: flex; flex-direction: column; justify-content: center; align-items: center; position: relative;}
     .popupArea.applicationComplete > div h3{font-size: 3.063rem; font-weight: 800; color: #05354d; margin-bottom: 1.875rem;}
     .popupArea.applicationComplete > div p{font-size: 1.375rem; line-height: 1.938rem; font-weight: 700; text-align: center;}
