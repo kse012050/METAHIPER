@@ -57,6 +57,7 @@ function popupEvent(){
     })
     $('.popupArea > div > span').click(function(){
         $(this).closest('.popupArea').fadeOut();
+        $('body').removeAttr('style');
     })
 }
 
@@ -165,6 +166,7 @@ function inputEvent(){
         this.value.length < maxLength ? $(this).addClass('error') : $(this).removeClass('error');
     })
 
+    
     $('input[type="submit"].sendBtn').click(function(e){
         e.preventDefault();
         if($(window).width() <= 1100 && $(this).hasClass('mobilePopup')){
@@ -197,9 +199,9 @@ function inputEvent(){
                 },
                 success : function(){
                     $('.applicationComplete').fadeIn().css('display','flex')
-                    $('[data-input]').val('')
                 }
             })
+            $('[data-input]').val('')
         }
     })
 }

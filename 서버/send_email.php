@@ -5,6 +5,7 @@ use PHPMailer\PHPMailer\PHPMailer;
 $userName = $_POST['userName'];
 $userMobile = $_POST['userMobile'];
 sendEmail($userName,"ashley.shin@tft.best",$userName.' '.$userMobile , '이름 : '.$userName.'<br>전화번호 : '.$userMobile, "");
+// sendEmail($userName,"kse012050@naver.com",$userName.' '.$userMobile , '이름 : '.$userName.'<br>전화번호 : '.$userMobile, "");
 function sendEmail($receiverName, $toMailAddress, $subject, $contentBody,$attachFilePath)
 {
     ////-----    이메일 발송   --------  ////
