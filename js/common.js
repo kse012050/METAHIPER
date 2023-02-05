@@ -131,11 +131,25 @@ function proceedsInput(){
     function proceedsValue(value){
         const result = Number(value);
         let valueLength = value.length;
-        $('#proceeds').val(value + '만원');
+        valueLength > 4 && (valueLength++)
+        $('#proceeds').val(test(result));
         $('#proceeds').selectRange(valueLength);
-        $('[data-proceeds="year"]').html(Math.round((result * 0.15) * 100) / 100 + '만원')
-        $('[data-proceeds="month"]').html(Math.round((result * 0.15 / 12) * 100) / 100 + '만원')
-        $('[data-proceeds="total"]').html(Math.round((result * 0.15 * 35) * 100) / 100 + '만원')
+        $('[data-proceeds="year"]').html(test(Math.round((result * 0.15))))
+        $('[data-proceeds="month"]').html(test(Math.round((result * 0.15 / 12))))
+        $('[data-proceeds="total"]').html(test(Math.round((result * 0.15 * 35))))
+    }
+
+    function test(value){
+        value = String(value);
+        let valueLength = value.length
+        let result = '';
+        if(valueLength > 4){
+            result += value.slice(0 , valueLength - 4) + '억'
+            result += value.slice(valueLength - 4 ,valueLength) + '만원'
+        }else{
+            result += value + '만원'
+        }
+        return result;
     }
 
     $('.simpleConsulting').click(function(e){
