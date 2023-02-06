@@ -131,12 +131,15 @@ function proceedsInput(){
     function proceedsValue(value){
         const result = Number(value);
         let valueLength = value.length;
-        valueLength > 4 && (valueLength++)
+        valueLength > 3 && (valueLength = valueLength+1);
+        valueLength > 5 && (valueLength = valueLength+1);
+        valueLength >= 10 && (valueLength = valueLength + ( Math.floor((valueLength - 7) / 3)))
+
         $('#proceeds').val(test(result));
         $('#proceeds').selectRange(valueLength);
-        $('[data-proceeds="year"]').html(test(Math.round((result * 0.15))))
-        $('[data-proceeds="month"]').html(test(Math.round((result * 0.15 / 12))))
-        $('[data-proceeds="total"]').html(test(Math.round((result * 0.15 * 35))))
+        $('[data-proceeds="year"]').html(test(Math.floor((result * 0.15))))
+        $('[data-proceeds="month"]').html(test(Math.floor((result * 0.15 / 12))))
+        $('[data-proceeds="total"]').html(test(Math.floor((result * 0.15 * 35))))
     }
 
     function test(value){
@@ -144,10 +147,10 @@ function proceedsInput(){
         let valueLength = value.length
         let result = '';
         if(valueLength > 4){
-            result += Number(value.slice(0 , valueLength - 4)).toLocaleString() + '억'
-            result += Number(value.slice(valueLength - 4 ,valueLength)).toLocaleString() + '만원'
+            result += value.slice(0 , valueLength - 4).replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",") + '억';
+            result += value.slice(valueLength - 4 ,valueLength).replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",") + '만원'
         }else{
-            result += value + '만원'
+            result += value.replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",") + '만원'
         }
         return result;
     }
