@@ -144,8 +144,8 @@ function proceedsInput(){
         let valueLength = value.length
         let result = '';
         if(valueLength > 4){
-            result += value.slice(0 , valueLength - 4) + '억'
-            result += value.slice(valueLength - 4 ,valueLength) + '만원'
+            result += Number(value.slice(0 , valueLength - 4)).toLocaleString() + '억'
+            result += Number(value.slice(valueLength - 4 ,valueLength)).toLocaleString() + '만원'
         }else{
             result += value + '만원'
         }
