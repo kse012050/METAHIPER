@@ -206,9 +206,9 @@
                                     <legend>투자수익금 계산</legend>
                                     <input type="text" id="proceeds" placeholder="투자금 입력 (숫자만 입력하세요.)">
                                     <div>
-                                        <button data-revenue="1200">100평</button>
-                                        <button data-revenue="6000">500평</button>
-                                        <button data-revenue="12000">1000평</button>
+                                        <button data-revenue="120">100평</button>
+                                        <button data-revenue="600">500평</button>
+                                        <button data-revenue="1200">1000평</button>
                                     </div>
                                     <table>
                                         <tbody>
