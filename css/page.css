@@ -50,7 +50,8 @@
     .topArea > div form fieldset :where(input[type="text"]){border: 1px solid #e4e4e4;}
     .topArea > div form fieldset input[type="text"]:first-of-type{margin-bottom: 0.938rem;}
     .topArea > div form fieldset input::placeholder{color: #c4c4c4;}
-    .topArea > div form fieldset :is(a , input[type="submit"]){display: block; font-size: 1.563rem; font-weight: 800; text-align: center; border-radius: 1.250rem;}
+    .topArea > div form fieldset :is(a , input[type="submit"]){display: flex; justify-content: center; align-items: center; font-size: 1.563rem; font-weight: 800; text-align: center; border-radius: 1.250rem;}
+    .topArea > div form fieldset a.cacaoBtn::after{content: ''; width: 2.500rem; height: 2.500rem; background: url('../images/icon-cacao.png') no-repeat center / cover; margin-bottom: 0.313rem;}
     .topArea > div form fieldset input[type="submit"]{width: 100%; height: 4.063rem; color: #3e3e3e; background-color: transparent; border: 0.125rem solid #16205a; margin-bottom: 0.625rem; margin-top: 1.250rem;}
     .topArea > div form fieldset a{line-height: 4.063rem;}
     .topArea > div form fieldset a:not(:last-of-type){margin-bottom: 0.625rem;}
