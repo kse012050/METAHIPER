@@ -133,9 +133,12 @@ function proceedsInput(){
     function proceedsValue(value , selector){
         const result = Number(value);
         let valueLength = value.length;
-        valueLength > 3 && (valueLength = valueLength+1);
-        valueLength > 5 && (valueLength = valueLength+1);
-        valueLength >= 10 && (valueLength = valueLength + ( Math.floor((valueLength - 7) / 3)))
+        // 억 단위 커서
+        // valueLength > 3 && (valueLength = valueLength+1);
+        // valueLength > 5 && (valueLength = valueLength+1);
+        // valueLength >= 10 && (valueLength = valueLength + ( Math.floor((valueLength - 7) / 3)))
+        // 억 단위 없을 때 커서
+        valueLength >= 4 && (valueLength = valueLength + ( Math.floor((valueLength - 1) / 3)))
         $('#proceeds').attr('data-save',result)
         $('#proceeds').val(test(result));
         $('#proceeds').selectRange(valueLength);
@@ -148,12 +151,13 @@ function proceedsInput(){
         value = String(value);
         let valueLength = value.length
         let result = '';
-        if(valueLength > 4){
-            result += value.slice(0 , valueLength - 4).replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",") + '억';
-            result += value.slice(valueLength - 4 ,valueLength).replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",") + '만원'
-        }else{
-            result += value.replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",") + '만원'
-        }
+        // 억 단위 넣기
+        // if(valueLength > 4){
+        //     result += value.slice(0 , valueLength - 4).replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",") + '억';
+        //     result += value.slice(valueLength - 4 ,valueLength).replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",") + '만원'
+        // }else{
+        // }
+        result += value.replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",") + '만원'
         return result;
     }
 
