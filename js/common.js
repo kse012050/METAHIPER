@@ -116,6 +116,8 @@ function proceedsInput(){
     
     // 수익금 인풋
     $('#proceeds').on('input keydoun',function(e){
+        this.value = this.value.replaceAll(',', '').replace('만원','')
+        console.log(this.value);
         this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');
         let value = this.value;
         if(value === ''){return}
@@ -128,13 +130,13 @@ function proceedsInput(){
         proceedsValue(value)
     })
 
-    function proceedsValue(value){
+    function proceedsValue(value , selector){
         const result = Number(value);
         let valueLength = value.length;
         valueLength > 3 && (valueLength = valueLength+1);
         valueLength > 5 && (valueLength = valueLength+1);
         valueLength >= 10 && (valueLength = valueLength + ( Math.floor((valueLength - 7) / 3)))
-
+        $('#proceeds').attr('data-save',result)
         $('#proceeds').val(test(result));
         $('#proceeds').selectRange(valueLength);
         $('[data-proceeds="year"]').html(test(Math.floor((result * 0.15))))

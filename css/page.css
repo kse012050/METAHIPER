@@ -89,8 +89,8 @@
     .productArea > ol > li > div ol li{font-size: 2.188rem; padding: 3.125rem; border-radius: 10rem; box-shadow: 0.313rem 0.313rem 1.250rem -0.625rem rgba(0, 0, 0, 0.5);}
     .productArea > ol > li > div ol li:not(:last-child){margin-bottom: 2.500rem;}
     .productArea > ol > li.revenueArea div{padding-bottom: 31.250rem; background: url('../images/revenueImg.png') no-repeat center bottom / 85%;}
-    /* .productArea > ol > li.investArea > div .popupArea{display: flex;} */
     .productArea > ol > li.investArea > div{padding: 5rem 55% 5rem 0; background: url('../images/investImg.png') no-repeat right center / 50%}
+    /* .productArea > ol > li.investArea > div .popupArea{display: flex;} */
     .productArea > ol > li.investArea > div .popupArea > div{padding: 3.438rem 1.250rem 1.250rem;  text-align: center;}
     .productArea > ol > li.investArea > div .popupArea > div fieldset legend{display: block; font-size: 2.188rem; font-weight: 800; color: #05354d; margin-bottom: 1.250rem;}
     .productArea > ol > li.investArea > div .popupArea > div fieldset input[type="text"]{width: 21.250rem; height: 2.625rem; border: 1px solid #a7a7a7; border-radius: 0.625rem; text-align: center; box-sizing: border-box; margin-bottom: 0.938rem;}
@@ -113,7 +113,7 @@
     .productArea > ol > li.certificationArea{display: flex; align-items: center; gap: 3.125rem;}
     .productArea > ol > li.certificationArea > *{flex: 1;}
     .productArea > ol > li.certificationArea > div h3{margin-bottom: 2.188rem;}
-    .productArea > ol > li.certificationArea > div > p{margin-bottom: 3.750rem;}
+    .productArea > ol > li.certificationArea > div > p{margin-bottom: 3.750rem; letter-spacing: -0.5px;}
     .productArea > ol > li.certificationArea > div div{font-weight: 700;}
     .productArea > ol > li.certificationArea > div div > mark{display: block; font-size: 5.625rem; margin-bottom: 2.188rem;}
     .productArea > ol > li.certificationArea > div div p{margin-bottom: 2.500rem;}
