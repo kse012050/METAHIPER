@@ -11,10 +11,26 @@
     .desktop{display: none;}
 
     /* 팝업 */
+    .firstPopup{display: none; position: fixed; left: 5%; top: 10px; width: 90%; z-index: 1000; line-height: 0;}
+    .firstPopup img{width: 100%;}
+    .firstPopup .cacaoBtn{width: 100%; line-height: 1; font-size: 2rem; font-weight: 700; padding: 1rem 0;}
+    .firstPopup span{position: absolute; right: 1rem; top: 1rem; font-size: 3rem; cursor: pointer; background-color: white; border: 1px solid black;}
+    .firstPopup div{display: block; text-align: right; line-height: 1; background-color: white; padding-top: 0.5rem;}
+    .firstPopup div label{font-size: 1.5rem; font-weight: 700; cursor: pointer;}
     .popupArea{display: none; justify-content: center; align-items: center; position: fixed; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.8); z-index: 1000;}
+    .popupArea.active{display: flex;}
     .popupArea > div{background-color: white; border-radius: 1.250rem; position: relative;}
     .popupArea > div > span{position: absolute; right: 1rem; top: 1rem; font-size: 2rem; cursor: pointer;}
+
+    /* 카카오 링크 */
+    .cacaoBtn{display: flex; justify-content: center; align-items: center; background-color: #fae100; color: #3c1d1e;}
+    a.cacaoBtn::after{content: ''; width: 2.500rem; height: 2.500rem; background: url('../images/icon-cacao.png') no-repeat center / cover; margin-bottom: 0.313rem;}
     
+    /* 픽스트 링크  */
+    /* 카카오 */
+    .fixedLink{display: none; position: fixed; right: 30px; bottom: calc(9rem + 10px); font-size: 1.5rem; font-weight: 700; text-align: center; z-index: 1000;}
+    .fixedLink::before{content: ''; display: block; width: 100%; padding-bottom: 100%; background:#fae100 url('../images/icon-cacao.png') no-repeat center / 80%; margin-bottom: 0.313rem; border-radius: 100%;}
+
     /* 해더 */
     header{background-color: white; padding: 0.938rem 0; text-align: center;}
     header img{width: 5.938rem;}
@@ -77,7 +93,6 @@
     .topArea > div form fieldset input:first-of-type{margin-bottom: 0.938rem;}
     .topArea > div form fieldset input::placeholder{color: #c4c4c4;}
     .topArea > div form fieldset :is(a , input[type="submit"]){display: flex; justify-content: center; align-items: center; font-size: 1.563rem; font-weight: 800; text-align: center; border-radius: 1.250rem;}
-    .topArea > div form fieldset a.cacaoBtn::after{content: ''; width: 2.500rem; height: 2.500rem; background: url('../images/icon-cacao.png') no-repeat center / cover; margin-bottom: 0.313rem;}
     .topArea > div form fieldset a:not(:last-of-type){margin-bottom: 0.625rem;}
     .topArea > div form fieldset input[type="submit"]{color: #3e3e3e; background-color: transparent; height: 4.063rem; border: 2px solid #16205a; margin-top: 1.250rem; margin-bottom: 0.625rem;}
     .topArea > div form fieldset a{line-height: 4.063rem;}
@@ -134,7 +149,7 @@
     .productArea > ol > li.investArea > div .popupArea > div fieldset table tr{font-size: 1.250rem; line-height: 3.438rem; font-weight: 700;}
     .productArea > ol > li.investArea > div .popupArea > div fieldset table tbody tr{color: #555555; border-bottom: 0.125rem solid #e6e6e6;}
     .productArea > ol > li.investArea > div .popupArea > div fieldset table tfoot tr{background-color: #fefbe5;}
-    .productArea > ol > li.investArea > div .popupArea > div fieldset p{font-size: 1rem; color: #aa0000; font-weight: 400; margin-bottom: 1rem;}
+    .productArea > ol > li.investArea > div .popupArea > div fieldset p{font-size: 1rem; /* color: #aa0000; */ font-weight: 400; margin-bottom: 1rem;}
     .productArea > ol > li.investArea > div .popupArea > div fieldset input[type="submit"]{width: 30rem; height: 4rem; font-size: 1.5rem; color: white; background-color: #008cd3; border-radius: 0.625rem; border: none;}
     .productArea > ol > li.satisfactionArea > div > div{margin-top: 1.563rem;}
     .productArea > ol > li.satisfactionArea > div > div div{padding-bottom: 54%; background-repeat: no-repeat; background-position: center; background-size: cover; height: 0.1px; text-indent: -9999px;}

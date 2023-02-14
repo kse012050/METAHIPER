@@ -1,6 +1,5 @@
 $(document).ready(function(){
-
-    // 메뉴 스크롤 이벤트
+    // 스크롤 이벤트
     scrollEvent()
 
     // 팝업 이벤트
@@ -17,9 +16,12 @@ $(document).ready(function(){
    
 })
 
-// 메뉴 스크롤 이벤트
+// 스크롤 이벤트
 function scrollEvent(){
+    // 스크롤 이벤트
+    fixedLink();
     $(window).scroll(function(){
+        // 메뉴
         const windowScroll = $(this).scrollTop()
         $('[data-scroll]').each(function(i){
             if(windowScroll > $(this).offset().top - 10){
@@ -30,8 +32,16 @@ function scrollEvent(){
         if(windowScroll < $('[data-scroll]').eq(0).offset().top){
             $('nav ul li').removeClass('active');
         }
+
+
+        fixedLink();
     })
 
+    function fixedLink(){
+        $(window).scrollTop() > $('.oldAge').offset().top ? $('.fixedLink').fadeIn() : $('.fixedLink').fadeOut();
+    }
+
+    // 수익금 닫기 / 애니메이션
     $('a[data-scrollClick]').click(function(e){
         e.preventDefault();
         const attrName = $(this).attr('data-scrollClick');
@@ -41,6 +51,27 @@ function scrollEvent(){
 
 // 팝업 이벤트
 function popupEvent(){
+    // 첫 화면 페이지 팝업
+    if($.cookie('firstPopup') !== 'true'){
+        $('.firstPopup').show();
+    }
+    $('body').click(function(){
+        if($('.firstPopup').css('display') === 'block'){
+            $('.firstPopup').fadeOut();
+        }
+    })
+    $('.firstPopup').click(function(e){
+        e.stopPropagation();
+    })
+    $('.firstPopup div label , .firstPopup span').click(function(){
+        $(this).closest('.firstPopup').fadeOut();
+    })
+    $('.firstPopup div label').click(function(){
+        $.cookie('firstPopup' , true , {expires:1,path:"/"})
+        console.log($.cookie('firstPopup'));
+    })
+
+    // 클릭 팝업
     $('[data-popupOpen]').click(function(e){
         e.preventDefault();
         const attrName = $(this).attr('data-popupOpen');
@@ -153,11 +184,11 @@ function proceedsInput(){
         let result = '';
         // 억 단위 넣기
         // if(valueLength > 4){
-        //     result += value.slice(0 , valueLength - 4).replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",") + '억';
-        //     result += value.slice(valueLength - 4 ,valueLength).replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",") + '만원'
+        //     result += value.slice(0 , valueLength - 4).replace(/\B(?=(\d{3})+(?!\d))/g, ",") + '억';
+        //     result += value.slice(valueLength - 4 ,valueLength).replace(/\B(?=(\d{3})+(?!\d))/g, ",") + '만원'
         // }else{
         // }
-        result += value.replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",") + '만원'
+        result += value.replace(/\B(?=(\d{3})+(?!\d))/g, ",") + '만원'
         return result;
     }
 
@@ -191,7 +222,7 @@ function inputEvent(){
 
     
     $('input[type="submit"].sendBtn').click(function(e){
-        e.preventDefault();
+        e.preventDefault(); 
         if($(window).width() <= 1100 && $(this).hasClass('mobilePopup')){
             e.preventDefault();
             $('.applicationArea').fadeIn().css('display','flex');

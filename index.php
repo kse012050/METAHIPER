@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <!-- 쿠키 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js" integrity="sha512-3j3VU6WC5rPQB4Ld1jnLV7Kd5xr+cq9avvhwqzbH/taCRNURoeEpoPBK9pDyeukwSxwRPJ8fDgvYXd6SkaZ2TA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- swiper js -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <!-- js -->
@@ -37,6 +39,16 @@
     <header>
         <h1><img src="images/logo.png" alt="METAHIPER Save Amazon Global Change"></h1>
     </header>
+    <div class="firstPopup">
+        <img src="images/popup.jpg" alt="지금 상담신청만 해도! 딱 100분에게 아마존 땅 10평 1년 소유권을 드립니다!">
+        <a href="http://pf.kakao.com/_zTKrxj/chat" class="cacaoBtn">카카오톡 상담 바로가기</a>
+        <div>
+            <label for="">다시 보지 않기</label>
+        </div>
+        <span class="material-symbols-outlined">
+            close
+        </span>
+    </div>
     <section class="topArea">
         <div class="contentSize">
             <div class="leftArea">
@@ -77,8 +89,8 @@
                         1:1 빠른 간편상담
                         <span><mark class="green">CRM투자상품</mark> 상담신청</span>
                     </strong>
-                    <input type="text" placeholder="이름" data-input="name" name="userName" maxlength="6">
-                    <input type="text" placeholder="전화번호" data-input="mobile" name="userMobile" maxlength="11">
+                    <input type="text" inputmode="text" style="ime-mode:active" placeholder="이름" data-input="name" name="userName" maxlength="6">
+                    <input type="text" inputmode="numeric" placeholder="전화번호" data-input="mobile" name="userMobile" maxlength="11">
                     <input type="submit" value="1:1 투자상담 예약" class="sendBtn">
                     <a href="tel:+8216681340">바로 전화상담 1668-1340</a>
                     <a href="http://pf.kakao.com/_zTKrxj/chat" class="cacaoBtn">카카오톡 간편상담</a>
@@ -204,7 +216,7 @@
                             <form>
                                 <fieldset>
                                     <legend>투자수익금 계산</legend>
-                                    <input type="text" id="proceeds" placeholder="투자금 입력 (숫자만 입력하세요.)">
+                                    <input type="text" id="proceeds" inputmode="numeric" placeholder="투자금 입력 (숫자만 입력하세요.)">
                                     <div>
                                         <button data-revenue="120">100평</button>
                                         <button data-revenue="600">500평</button>
@@ -417,10 +429,10 @@
                     </legend>
                     <ul>
                         <li>
-                            <input type="text" placeholder="이름" data-input="name" name="userName" maxlength="6">
+                            <input type="text" inputmode="text" style="ime-mode:active" placeholder="이름" data-input="name" name="userName" maxlength="6">
                         </li>
                         <li>
-                            <input type="text" placeholder="전화번호" data-input="mobile" name="userMobile" maxlength="11">
+                            <input type="text" inputmode="numeric" placeholder="전화번호" data-input="mobile" name="userMobile" maxlength="11">
                         </li>
                     </ul>
                     <input type="submit" value="상담 예약하기" class="sendBtn">
@@ -481,8 +493,8 @@
         <div class="contentSize">
             <form>
                 <fieldset>
-                    <input type="text" placeholder="이름" class="desktop" data-input="name" name="userName" maxlength="6">
-                    <input type="text" placeholder="전화번호" class="desktop" data-input="mobile" name="userMobile" maxlength="11">
+                    <input type="text" inputmode="text" style="ime-mode:active" placeholder="이름" class="desktop" data-input="name" name="userName" maxlength="6">
+                    <input type="text" inputmode="numeric" placeholder="전화번호" class="desktop" data-input="mobile" name="userMobile" maxlength="11">
                     <button data-popupOpen="revenue">투자 수익금 계산</button>
                     <input type="submit" value="1:1 투자상담 신청" class="mobilePopup sendBtn">
                 </fieldset>
@@ -498,8 +510,8 @@
                         연락처 남겨주시면<br>
                         전문 상담원이 연락 드릴게요!
                     </legend>
-                    <input type="text" placeholder="이름" class="desktop" data-input="name" name="userName" maxlength="6">
-                    <input type="text" placeholder="전화번호" class="desktop" data-input="mobile" name="userMobile" maxlength="11">
+                    <input type="text" inputmode="text" style="ime-mode:active" placeholder="이름" class="desktop" data-input="name" name="userName" maxlength="6">
+                    <input type="text" inputmode="numeric" placeholder="전화번호" class="desktop" data-input="mobile" name="userMobile" maxlength="11">
                     <input type="submit" value="빠른상담 신청하기" class="sendBtn">
                     <a href="http://pf.kakao.com/_zTKrxj/chat">카톡으로 물어보기</a>
                 </fieldset>
@@ -523,6 +535,10 @@
             </span>
         </div>
     </div>
+
+    <a href="http://pf.kakao.com/_zTKrxj/chat" class="fixedLink">
+        1:1 카톡상담
+    </a>
 
     <footer>
         <div class="contentSize">
