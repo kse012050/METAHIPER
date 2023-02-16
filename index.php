@@ -92,7 +92,7 @@
                     <input type="text" inputmode="text" style="ime-mode:active" placeholder="이름" data-input="name" name="userName" maxlength="6">
                     <input type="text" inputmode="numeric" placeholder="전화번호" data-input="mobile" name="userMobile" maxlength="11">
                     <input type="submit" value="1:1 투자상담 예약" class="sendBtn">
-                    <a href="tel:+8216681340">바로 전화상담 1668-1340</a>
+                    <a href="tel:+820215449348">바로 전화상담 1544-9348 </a>
                     <a href="http://pf.kakao.com/_zTKrxj/chat" class="cacaoBtn">카카오톡 간편상담</a>
                 </fieldset>
             </form>
@@ -455,7 +455,7 @@
                     </dl>
                     <dl>
                         <dt>대표번호</dt>
-                        <dd>1668 - 1340</dd>
+                        <dd>1544 - 9348 </dd>
                     </dl>
                     <dl>
                         <dt>이용시간</dt>
@@ -478,7 +478,7 @@
                     </dl>
                     <dl>
                         <dt>대표번호</dt>
-                        <dd>1668 - 1340</dd>
+                        <dd>1544 - 9348 </dd>
                     </dl>
                     <dl>
                         <dt>이용시간</dt>
@@ -545,7 +545,7 @@
             <img src="images/logo-footer.png" alt="">
             <address>
                 <p>대표 : 유인근</p>
-                <p>대표번호 : 1668-1340</p>
+                <p>대표번호 : 1544-9348 </p>
                 <p>주소 : 서울특별시 강남구 테헤란로 139 신중앙빌딩, 10층</p>
                 <p>COPYRIGHT ⓒMETAHIPER ALL RIGHTS RESERVED.</p>
             </address>
